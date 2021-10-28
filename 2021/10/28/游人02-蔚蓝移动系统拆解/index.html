@@ -26,7 +26,7 @@
 
   
 
-  <title>游人01-任天堂明星大乱斗博弈拆解 | 華工新傳播學系</title>
+  <title>游人02-蔚蓝移动系统拆解 | 華工新傳播學系</title>
 
   
 
@@ -49,7 +49,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(/img/00.jpg)"></div>
+    <div class="post-image" style="background-image: url(/img/03.jpg)"></div>
   
 
   <!-- navbar -->
@@ -100,11 +100,11 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">游人01-任天堂明星大乱斗博弈拆解</h1>
+          <h1 class="title-wrap">游人02-蔚蓝移动系统拆解</h1>
           <h2 class="title-sub-wrap">
             <strong>HuaGong-Explorer</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2021-10-27T05:57:04.000Z" itemprop="datePublished">2021-10-27</time>
+            <time  class="article-date" datetime="2021-10-28T07:25:07.000Z" itemprop="datePublished">2021-10-28</time>
           </h2>
           <ul class="wrap-list dark">
   
@@ -115,9 +115,9 @@
   
     <li><a href="/tags/%E6%8B%86%E8%A7%A3/">🏷️ 拆解</a></li>
   
-    <li><a href="/tags/ACT/">🏷️ ACT</a></li>
+    <li><a href="/tags/%E5%B9%B3%E5%8F%B0%E8%B7%B3%E8%B7%83/">🏷️ 平台跳跃</a></li>
   
-    <li><a href="/tags/brandon/">🏷️ brandon</a></li>
+    <li><a href="/tags/%E6%9C%88%E7%82%B8/">🏷️ 月炸</a></li>
   
 </ul>
         </div>
@@ -142,37 +142,69 @@
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
         <blockquote>
-<p>前言：格斗游戏本质上就是回合制的博弈游戏，从博弈角度拆解动作系统可以对该游戏有着全新的认识和理解。</p>
+<p>一句话来评价《蔚蓝》的移动体验：手感（控制感）极佳，角色灵动十足，反馈带劲，关卡节奏优秀。</p>
 </blockquote>
-<p><img src="https://img-blog.csdnimg.cn/3eb7659c41834145a9634add965e25c2.png?x-oss-process=image,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5LuK5aSp5L2g5Lus5o6J5aS05Y-R5LqG5ZCX,size_20,color_FFFFFF,t_70,g_se,x_16"></p>
-<p><img src="https://img-blog.csdnimg.cn/c3e4e38fda3d4b53847fe4521c52a300.png?x-oss-process=image,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5LuK5aSp5L2g5Lus5o6J5aS05Y-R5LqG5ZCX,size_20,color_FFFFFF,t_70,g_se,x_16" alt="这是拆解的主体框架"></p>
-<h2 id="1-博弈映射部分"><a href="#1-博弈映射部分" class="headerlink" title="1.博弈映射部分"></a>1.博弈映射部分</h2><h3 id="1-1博弈概念"><a href="#1-1博弈概念" class="headerlink" title="1.1博弈概念"></a>1.1博弈概念</h3><p>博弈是指在一定的游戏规则约束下，基于直接相互作用的环境条件，各参与人依靠所掌握的信息，选择各自策略（行动），以实现利益最大化和风险成本最小化的过程（百度百科）</p>
-<p>在<strong>《super smash bros 》</strong>中，博弈由5方面组成<br><strong>博弈的参加者</strong>：即博弈过程中独立决策、独立承担后果的个人和组织；<br>指游戏中对抗中的玩家与玩家/玩家与AI<br><strong>博弈信息</strong>：即博弈者所掌握的对选择策略有帮助的情报资料；<br>指己方与敌方角色的动作机制、技能特性、地图信息，血量、道具资源，角色的攻击判定框大小等<br><strong>搏弈方可选择的全部行为或策略的集合</strong>：<br>包括距离控制，道具获取，场上站位，猛击/普攻/smash的选择 攻击方向和位移的选择等。<br><strong>博弈的次序</strong>：即博弈参加者做出策略选择的优先级.<br><strong>博弈方的收益</strong>：即各博弈方做出决策选择后的取得的博弈优势资源和劣势资源。<br><strong>super smash bros</strong>中的格斗价值杠杆为血量，敌方血量的损失量决定角色击飞距离以及距离死亡的危险程度。</p>
-<h3 id="1-2-博弈流程分析"><a href="#1-2-博弈流程分析" class="headerlink" title="1.2 博弈流程分析"></a>1.2 博弈流程分析</h3><p>博弈是格斗游戏的胜负手，博弈后选择的行为集决定了玩家在对局中的收益与损失。</p>
-<p>下面，将通过一局对战的流程解析玩家博弈中的行为以及博弈在游戏中的映射<br><img src="https://img-blog.csdnimg.cn/3a77ad3855c1402e842c32d09c6d9f91.png?x-oss-process=image,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5LuK5aSp5L2g5Lus5o6J5aS05Y-R5LqG5ZCX,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/b88fcd61e7a44f7cace5a2ff33c02de7.png?x-oss-process=image,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5LuK5aSp5L2g5Lus5o6J5aS05Y-R5LqG5ZCX,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/908b8e4dfc1546ef8bc0473e64f09b39.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5LuK5aSp5L2g5Lus5o6J5aS05Y-R5LqG5ZCX,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="1-3博弈资源拆解"><a href="#1-3博弈资源拆解" class="headerlink" title="1.3博弈资源拆解"></a>1.3博弈资源拆解</h3><p>可将博弈资源分为动态资源和静态资源两类。</p>
-<p> 静态资源包括游戏规则、地图以及角色预制属性，静态资源的保有度是不变的。<br>动态资源包括血条、场上站位、角色状态（攻/守、移动/静止），道具等，动态资源随着对局发展时刻发生变化。</p>
-<h2 id="2-动作系统拆解"><a href="#2-动作系统拆解" class="headerlink" title="2.动作系统拆解"></a>2.动作系统拆解</h2><h3 id="2-1系统分析"><a href="#2-1系统分析" class="headerlink" title="2.1系统分析"></a>2.1系统分析</h3><p><em>我选取了林克作为分析对象</em><br>林克的动作资源包括空中动作资源、地面动作资源和特殊资源。<br><strong>可以得出林克在博弈过程中优劣资源的总体评价</strong><br>优势：较多的远程攻击技能（炸弹、回旋镖、弓箭、剑气）<br>             多样的KO技（除普攻，其他攻击均易触发KO）<br>              控制场上站位能力优秀<br>             剑的伤害判定范围较大<br>劣势：许多攻击后摇帧过长，破绽较多<br>             移动偏慢，回场（生存）能力较差<br>              对近身敌人防御能力较差</p>
-<p>在大多数榜单排行中，林克的战力均处于标准线之上的位置，混合进攻以及优秀的远程拉扯能力是他的优势所在，同时炸弹回旋镖也颇具游戏趣味。</p>
-<h3 id="2-2-博弈的循环性"><a href="#2-2-博弈的循环性" class="headerlink" title="2.2 博弈的循环性"></a>2.2 博弈的循环性</h3><p>之前在博弈映射部分已经提到，格斗游戏本质上是零和博弈，玩家行为模式、状态的改变均对游戏博弈资源发生改变，下面就用X、Y散点图来表示这种系统的循环性。<br>场上玩家：林克&amp;enemy<br>游戏中<br>博弈静态资源的分配是稳定的，双方均分配50%<br>而动态资源随着游戏对局双方博弈策略的使用发生动态改变</p>
-<p>格斗游戏中，每一次双方之间的攻防以及行为模式的改变均可以细分成一次回合，只不过相较于回合制游戏的资源的线性变化，格斗游戏以拟态曲线进行发展，下面是我将林克和对手的10次攻防回合做出了X、Y散点图</p>
-<p><img src="https://img-blog.csdnimg.cn/814998c716c74d288c549cdd5f31dac5.png?x-oss-process=image,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5LuK5aSp5L2g5Lus5o6J5aS05Y-R5LqG5ZCX,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>解释：1.游戏的博弈资源是恒定的单位1，对局开始，双方的博弈资源均是0.5<br>2.回合1是林克打破立回局面，进入攻势，他获得了对手伤害值的反馈以及场上站位的主动权，对于开场这回合，他获得了0.1博弈资源的加成。<br>3.后续的变化均来自双方之间的攻防策略的选择，或是道具资源的加入短暂在本回合获得优势。<br>4.若对该函数曲线求定积分，面积的大小是判定游戏胜负的决定要素，在通常情况下，随着回合数的增多，面积突破一个固定值，该角色将获得胜利。<br>5.当然，若出现自杀、回场失误等决定比赛的关键失误，该角色在这回合的博弈资源损失量接近无穷大，直接使对手获得胜利。<br>6.博弈资源的消耗和获得是相互的，林克损失的博弈资源将被对手获取。<br>7.对于林克自身，采取不同的行为模式和战术策略使得自身的博弈资源不断增加或减少，最终在对局结束后形成博弈资源在游戏对战中的集中反馈，形成了角色内部的获取-反馈小循环。<br>8.对于双方，见招拆招的攻防,使得双方的博弈资源不断发生转换，而但总和始终保持不变，形成格斗系统内部资源的大循环。</p>
-<h3 id="2-3行为集拆解动作系统元素对-对局中的克制关系产生巨大影响"><a href="#2-3行为集拆解动作系统元素对-对局中的克制关系产生巨大影响" class="headerlink" title="2.3行为集拆解动作系统元素对 对局中的克制关系产生巨大影响"></a>2.3行为集拆解动作系统元素对 对局中的克制关系产生巨大影响</h3><p>分为3个方面，分别是时间维度，空间维度和指令维度。<br>时间维度方面：不同动作组合分别具有不同的前摇后摇帧，而攻防直接的帧数差直接决定了攻击或者防御的奏效与否。<br>空间维度方面：移动，跳跃，静止都带来场上位置的变化，场上站位也是格斗游戏中博弈的关键点，不同的空间高度层次直接影响攻击的克制关系，例如角色因二段跳处于高位，则上吹飞、上必杀可对其带来克制关系。<br>指令维度：由于格斗游戏的预输入机制，不同的招数列表拥有不同的优先级，利用好预输入机制可以使用目押连段等方式持续克制对方角色。</p>
-<h2 id="3-体验反思"><a href="#3-体验反思" class="headerlink" title="3.体验反思"></a>3.体验反思</h2><h3 id="3-1博弈本质"><a href="#3-1博弈本质" class="headerlink" title="3.1博弈本质"></a>3.1博弈本质</h3><p>FTG强调胜负概念，是零和博弈。之前已经提到过玩家本身内部的循环以及对局双方之间的博弈循环，再补充一些观点以对博弈本质进行阐述。<br>博弈不仅包括对局双方的博弈，还包括玩家与自己心理的博弈，需要即时在与对手的博弈中，与自己本来的操作习惯进行心理对峙与博弈。<br>因此我们得出FTG中博弈的本质 ：玩家获取静态资源的信息资源，争夺游戏中的动态资源，在回合制的对抗中使自己处于有利形势。</p>
-<h3 id="3-2博弈点"><a href="#3-2博弈点" class="headerlink" title="3.2博弈点"></a>3.2博弈点</h3><p>1.势的争夺<br>游戏中可将玩家的状态分为攻势、中势与守势。</p>
-<p>根据玩家博弈策略的有效与否，攻守势会不断发生变化。</p>
-<p>玩家所处的势态决定了之后的行为模式，处于守势而定玩家需要把握好攻势玩家在攻击之后短暂出现的中势时间及时扭转势态。处于攻势的玩家需要利用场上站位、动作资源等将自己保持在攻势状态、</p>
-<p>而中势则是玩家对抗中神经最紧绷的状态，随时可能通过攻防回合进入攻势或者守势。</p>
-<p>2.择<br>指在处于有利帧/对手暂时硬直状态，使得对手做出博弈选择。</p>
-<p>多择：多择类似于猜拳，进攻方有两种以上发起进攻的方式，分别对应着防御方不同的有效防守的方式，只有预判到了（或者猜中了）进攻方的手段，才能进行有效的防御，阻止进攻方完成确认。<br>这考验处于劣势一方的即时博弈能力，而处于有利一方的玩家，由于占据大量博弈资源，需要利用好择，将优势转化为胜势。<br>3.场地的争夺</p>
-<p>无论是如KOF将对手逼近边角，还是《super smash bros》中将对手击飞出中场，博弈的核心点均是为了场地的争夺。一般来说，越靠近中间位置，越处于有利地位。因为其可用的博弈资源很多，向左向右向上跳跃等都可以使用，可以衍生出很多攻防方案，而处于边场的玩家只有2个方向可以选择，并且占据的博弈资源很少，对手很容易预判其行为模式进行进攻压制。 </p>
-<p>4.帧数<br>抓帧也是出色的格斗游戏玩家不可忽视的博弈关键点，通过之前分析的出招帧数表，可以明确了解各种招数的出招帧数，在于对手进行对抗时，需要合理规划自己出招的伤害与速度的平衡性，同时利用预输入机制将自己出招连续化。目押等操作都是把握攻击招式的间隔帧数差，实现博弈过程中的收益最大化。</p>
-<h3 id="3-3如何2d格斗转3d格斗？"><a href="#3-3如何2d格斗转3d格斗？" class="headerlink" title="3.3如何2d格斗转3d格斗？"></a>3.3如何2d格斗转3d格斗？</h3><p>1.3D游戏增加了一个坐标轴，使得原来平面的对战变得多维度化。原先的对于距离控制博弈在多维度下显然难以维系，因为对手在X轴和Y轴均可躲避。</p>
-<p>因此需要增加类似永劫无间钩索这种快速位移道具，或者如火影忍者究极风暴中快速锁定近身的键位操作，实现位移的精准化。使得原先的2D横屏对抗中的即时博弈在3D中仍然适用。</p>
-<p>2D游戏中的攻防节奏速度极快，极大考验博弈的精准性和技巧性，3D游戏视野开阔，空间大，攻防转换较慢，需要增加随着格斗时间增加，场地逐渐缩小（或毒圈逐渐包围）的机制，逐渐收缩玩家间的动作资源，实现博弈的正常运行。</p>
-<p>3.增强地形/地图架构在游戏对战的重要性，玩家利用地形掩体抵挡对手攻击，利用不同地域的高低差实现下落攻击，将得原先的博弈资源得到合理补充。</p>
-<p>4.减少跳跃的高度和速度，3D格斗游戏非ACT需要大量的空中攻击之类的表演性对抗，频繁的跳跃对于游戏镜头视角也极难处理，降低跳跃高度和速度使得玩家更注重于地面的对战博弈。</p>
-<p>5.在页面追加小地图，显示双方位置，使得博弈过程中对于的场地控制。</p>
+<h1 id="1-分析移动特点"><a href="#1-分析移动特点" class="headerlink" title="1.分析移动特点"></a>1.分析移动特点</h1><h2 id="1-1资源管理"><a href="#1-1资源管理" class="headerlink" title="1.1资源管理"></a>1.1资源管理</h2><p>基于资源管理的解谜是蔚蓝的一大特色。</p>
+<p>在前期，资源由固定攀爬精力+二段跳跃机会+关卡资源（如绿色水晶补充跳跃机会）组成。</p>
+<p>玩家需要对自身的资源进行管理，并收集地图资源，从而规划过关路径。</p>
+<p>这样的资源管理式解谜并不是只有唯一解，其关卡设计很好的契合了这一移动特性，通常有较多的路径选择。</p>
+<p>后续加入三段跳，实际是全局上增加了固定资源，为复杂关卡搭建提供基础。</p>
+<h2 id="1-2包容性"><a href="#1-2包容性" class="headerlink" title="1.2包容性"></a>1.2包容性</h2><p>包容性主要体现在一些细节机制上，如：跳跃预输入；边角修正；非严格操作（蹬墙跳）。</p>
+<p>落地前提前按跳跃，会在落地瞬间起跳。（预输入）</p>
+<p>蹬墙跳不必贴墙，只需距离2像素。（非严格输入）</p>
+<p>冲刺时会避开障碍，自动修正位置。（边角修正）</p>
+<p>这些机制具有极强的包容性，虽然看起来并不严格，但优化了玩家的手感，在体验上增添流畅。后面会具体提到其中一些机制。</p>
+<h2 id="1-3-关卡节奏优秀"><a href="#1-3-关卡节奏优秀" class="headerlink" title="1.3 关卡节奏优秀"></a>1.3 关卡节奏优秀</h2><p>《蔚蓝》的关卡较为简短，在这个极小的关卡空间内，能够利用已有的移动机制动态地控制关卡节奏，是其特殊之处。</p>
+<p>控制关卡节奏，主要在于冲刺点补充道具（绿色钻石，果冻墙、泡泡）的投放，以及攀爬机制制造的临时安全区（落地前动作做到一半的缓冲）。游玩体验是：停下来规划路线，进行一次快节奏的位移，这中途还可以根据玩家水平和熟练度灵活控制缓冲时间。然后再停下来循环进入一个路线的规划阶段，整体松弛有度。</p>
+<br/>
+
+<h1 id="2-量化拆帧"><a href="#2-量化拆帧" class="headerlink" title="2.量化拆帧"></a>2.量化拆帧</h1><h2 id="2-1-角色移动机制"><a href="#2-1-角色移动机制" class="headerlink" title="2.1 角色移动机制"></a>2.1 角色移动机制</h2><p><img src="/img/celeste/0001.png"></p>
+<p><img src="/img/celeste/0002.png"></p>
+<p><img src="/img/celeste/0003.png"></p>
+<p><img src="/img/celeste/0004.png"></p>
+<p><img src="/img/celeste/0005.png"></p>
+<p><img src="/img/celeste/0006.png"></p>
+<p><img src="/img/celeste/0007.png"></p>
+<p><img src="/img/celeste/0008.png"></p>
+<p><img src="/img/celeste/0009.png"></p>
+<p><img src="/img/celeste/0010.png"></p>
+<p><img src="/img/celeste/0011.png"></p>
+<p><img src="/img/celeste/0012.png"></p>
+<p><img src="/img/celeste/0013.png"></p>
+<p><img src="/img/celeste/0014.png"></p>
+<p><img src="/img/celeste/0015.png"></p>
+<p><img src="/img/celeste/0016.png"></p>
+<h2 id="2-2动作帧数设计模式"><a href="#2-2动作帧数设计模式" class="headerlink" title="2.2动作帧数设计模式"></a>2.2动作帧数设计模式</h2><p>通过拆解奔跑、跳跃以及冲刺的具体帧数，可以窥见其背后的设计模式。这套平台跳跃动作没有基于引擎自带的物理系统进行设计，也很少重视人物运动的真实感，反而以玩家体验恰当的手感为重，运动参数都经过开发调试（控制Player的脚本多达5471行）。</p>
+<p>在拆解时，我们可以很清楚地将动作拆分为一系列的“阶段”，即一个简单的动作由几个“阶段性动画”组成。这样的设计有利于在开发时灵活地调节，并为玩家在一个动作内寻找“阶段”的关键节点提供了微操的上限，可把玩度极强。</p>
+<br/>
+
+<h1 id="3-延申玩法"><a href="#3-延申玩法" class="headerlink" title="3.延申玩法"></a>3.延申玩法</h1><h2 id="3-1跑跳"><a href="#3-1跑跳" class="headerlink" title="3.1跑跳"></a>3.1跑跳</h2><p>通过逐帧暴力抠图，可得下图，即最大限度跑跳的曲线，距离约5.5个身位，曲线平滑。</p>
+<h2 id="3-2-预输入跳跃"><a href="#3-2-预输入跳跃" class="headerlink" title="3.2 预输入跳跃"></a>3.2 预输入跳跃</h2><p>跳跃预输入实现了动作的无缝衔接，允许玩家进行一个连续的落地跳跃（通常伴随着x轴的大幅位移），不严格要求玩家落地，保证了连贯流畅的手感；具有包容性，手残玩家也可以体会到凌波微步的快乐。</p>
+<h2 id="3-3-蹬墙跳"><a href="#3-3-蹬墙跳" class="headerlink" title="3.3 蹬墙跳"></a>3.3 蹬墙跳</h2><p>这个机制是依附于场景而出现的，且并不需要严格贴墙（&lt;2像素即可），具有包容性。制造出一种流畅自如，施展轻功的爽快手感。</p>
+<h2 id="3-4-狼跳"><a href="#3-4-狼跳" class="headerlink" title="3.4 狼跳"></a>3.4 狼跳</h2><p>狼跳，指离开地面几帧还可以进行跳跃操作。</p>
+<p>可以理解是为了包容玩家操作而设计的机制，而这也衍生出了更高的操作上限，让速通玩家有了可利用的机制（甚至延伸出挨跳刺）。</p>
+<h2 id="3-5-攀爬行为"><a href="#3-5-攀爬行为" class="headerlink" title="3.5 攀爬行为"></a>3.5 攀爬行为</h2><p>攀爬时可以执行跳跃、冲刺的行为。</p>
+<h2 id="3-6冲刺打断"><a href="#3-6冲刺打断" class="headerlink" title="3.6冲刺打断"></a>3.6冲刺打断</h2><p>在任何情况（地面、空中、墙上、有时正在进行冲刺时），只要有冲刺点，都可以优先判定进行一次冲刺。</p>
+<p>一旦输入冲刺，就会基本执行完这个动作，但可以在一个冲刺快结束（约5像素距离）时打断它进行下一个冲刺。玩家基本感受不到明显打断，这里和跳跃落地前的预输入异曲同工。</p>
+<h2 id="3-7冲刺补正"><a href="#3-7冲刺补正" class="headerlink" title="3.7冲刺补正"></a>3.7冲刺补正</h2><p>这是基于冲刺而出现的一个机制：观察残影可知，当冲刺遇到障碍时，如果障碍阻塞体积不大，可以自动补正为一个跨越障碍的冲刺。</p>
+<h2 id="3-8动量储存"><a href="#3-8动量储存" class="headerlink" title="3.8动量储存"></a>3.8动量储存</h2><p>起重机、云朵以及果冻墙都有一定的传动效果。</p>
+<h2 id="3-9-大跳、凌波微步"><a href="#3-9-大跳、凌波微步" class="headerlink" title="3.9 大跳、凌波微步"></a>3.9 大跳、凌波微步</h2><p>和起重机存储动能类似，Madeline也可以利用自身跑跳的惯性或者借力实现超长的跳跃。这类操作可以实现依赖于其动作帧数的“阶段”设计模式，在前文有提到。</p>
+<p>最常见的俯冲：跳起+向斜下方冲刺，然后迅速向右跳跃，</p>
+<p>利用高低地形还可以演变成超级Ultra Dash。</p>
+<p><img src="/img/celeste/0020.png"></p>
+<br/>
+
+<h1 id="4-设计总结"><a href="#4-设计总结" class="headerlink" title="4.设计总结"></a>4.设计总结</h1><h2 id="4-1-设计理念"><a href="#4-1-设计理念" class="headerlink" title="4.1 设计理念"></a>4.1 设计理念</h2><h3 id="4-1-1连贯性设计"><a href="#4-1-1连贯性设计" class="headerlink" title="4.1.1连贯性设计"></a>4.1.1连贯性设计</h3><p>连贯性设计涉及到一些操作细节。在《蔚蓝》 中，这主要体现为跳跃的预输入（2像素）和 冲刺打断（5像素）。 特点：判定区间很小；在动作结束前判定； 马上连续执行下一个操作。 设计目的：连贯性设计很明显是为了保证游 戏的流畅度，以制造顺滑的手感。因为在像 素级游戏中，玩家基本不能准确抓住落地的 那一帧进行起跳，因此要实现连续的跳跃， 必须进行一个简短的预输入判定。冲刺没有 使用预输入而是直接打断，因为任何情况下 新的冲刺都是处于最高优先级的，必须保持 这个平衡。预输入/打断的判定时机相当短， 实际玩家体验难以觉察，保证了“角色依旧 在玩家掌控之中”，只是手感更连贯了。</p>
+<h3 id="4-1-2包容性设计和操作上限"><a href="#4-1-2包容性设计和操作上限" class="headerlink" title="4.1.2包容性设计和操作上限"></a>4.1.2包容性设计和操作上限</h3><p>包容性设计和连贯性设计类似，也属于对判定的一定程度的宽容。 连贯性设计强调动作衔接之间的连续，包容性设计强调单个动作 判定上的宽容。狼跳（10帧）、蹬墙跳（2像素）、冲刺补正都 属于包容性设计，这些设计事实上也带来了更高的操作上限。 特点：判定区间较小；在动作生效区间判定。 设计目的：增加判定区间同样帮助玩家更轻易地实现一个操作， 在保证手感连贯流畅的同时一并提升了操作的下限和上限。在更 进阶的技巧中，如超级蹬墙跳（向上冲刺蹬墙跳），蹬墙跳的判 定区间会更大（约5像素），这样的设计也在鼓励玩家尝试更精 准和严格的操作，提升自身的操作水平。</p>
+<h2 id="4-2-首要设计思路"><a href="#4-2-首要设计思路" class="headerlink" title="4.2 首要设计思路"></a>4.2 首要设计思路</h2><p>首要：作为一款关卡制平台跳跃游戏，《蔚蓝》在设计时最先要满足的是主要人物的移动操作没有问题， 手感（控制感、流畅度）较好，然后再在不同的关卡引入各具风味的辅助移动机制。 </p>
+<p>玩家导向：《蔚蓝》的移动机制主要针对了三大类人群—手残玩家，或只想体验故事的玩家（A类）； 对操作有追求，但技术一般的玩家（B类）；速通/多面的高级成就玩家（C类）。 </p>
+<p>对于A类和部分B类玩家，《蔚蓝》会是一个高难度游戏，设计时最优先考虑到的是：让整个移动机制简 洁易懂，提升操作的判定和下限。为此引入了较少的基本移动和包容性设计，跳跃、冲刺曲线的滞空时 间实际上也是便利玩家调整落点，降低操作门槛。（对AB类玩家的照顾还体现在死亡成本低这一特点上： 关卡简短，复活迅速等） </p>
+<p>对于C类玩家，制造操作上限是必不可少的，除了包容性设计的稍稍提升外，还要设计一套合理的，考 验操作的高阶玩法，这就引入了动能存储的组合机制（凌波微步，大跳，无体力上墙，反向跳墙等）， 这套动作组合给玩家提供了极高的操作上限，并且配套引入了高阶关卡。 对于B类玩家，设计师希望他们也能学会高阶操作。这就引入了高阶操作组合更大的判定宽容度，以及 在第九章中设计显式的高阶操作教学，使这些看似极限的操作更容易学习和实现。</p>
+<h2 id="4-3-关卡节奏导向"><a href="#4-3-关卡节奏导向" class="headerlink" title="4.3 关卡节奏导向"></a>4.3 关卡节奏导向</h2><p>关卡节奏导向：作为关卡制游戏，除了面向三类玩家设计一系列基本移动机制外，《蔚蓝》的移动机 制还必须服务于关卡的构建和节奏的把控。 </p>
+<p>在一个关卡中，玩家有时需要在空中进行连续的操作，也有时要在安全区停留下来以提供思考和缓冲 的时间。这反映在蔚蓝的基本移动机制设计上就是冲刺和攀爬。 </p>
+<p>为了创造在空中连续进行的流畅操作体验，就要同时从角色移动机制和关卡移动机制入手。首先需要 在关卡中引入一系列辅助玩家进行位移的道具（弹簧、起重机、云朵等），再结合角色设计出一套扩 充行动能力的机制，这就引入了冲刺和冲刺点的设计以及一系列补充冲刺点的可收集道具。这样，角 色的连续移动能力就和关卡设计挂钩了。 </p>
+<p>最后，玩家连续的移动需要有一个安全区进行有限时间缓冲，以控制关卡节奏跟随玩家的操作水平。 这就引入了攀爬机制（这里主要是指依附在墙体上），给移动制造短暂的停留。</p>
+<br/>
 
       </section>
 
@@ -180,32 +212,16 @@
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="/img/03.jpg"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2021/10/28/%E6%B8%B8%E4%BA%BA02-%E8%94%9A%E8%93%9D%E7%A7%BB%E5%8A%A8%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">游人02-蔚蓝移动系统拆解</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="/img/02.jpg"></div>
+      <div class="card-cover" background-image-lazy data-img="/img/00.jpg"></div>
     
     <div class="card-text">
       
-        <a href="/2021/10/26/Hello-Guys/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">Hello Guys！</h2>
+        <a href="/2021/10/27/%E6%B8%B8%E4%BA%BA01-%E4%BB%BB%E5%A4%A9%E5%A0%82%E6%98%8E%E6%98%9F%E5%A4%A7%E4%B9%B1%E6%96%97%E5%8D%9A%E5%BC%88%E6%8B%86%E8%A7%A3/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">游人01-任天堂明星大乱斗博弈拆解</h2>
         </a>
       
       <div class="card-text--row">Older</div>
@@ -274,7 +290,7 @@
     <span>TOC</span>
   </div>
   <div class="widget-body">
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%8D%9A%E5%BC%88%E6%98%A0%E5%B0%84%E9%83%A8%E5%88%86"><span class="toc-number">1.</span> <span class="toc-text">1.博弈映射部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1%E5%8D%9A%E5%BC%88%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">1.1博弈概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E5%8D%9A%E5%BC%88%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 博弈流程分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3%E5%8D%9A%E5%BC%88%E8%B5%84%E6%BA%90%E6%8B%86%E8%A7%A3"><span class="toc-number">1.3.</span> <span class="toc-text">1.3博弈资源拆解</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%8A%A8%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3"><span class="toc-number">2.</span> <span class="toc-text">2.动作系统拆解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90"><span class="toc-number">2.1.</span> <span class="toc-text">2.1系统分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E5%8D%9A%E5%BC%88%E7%9A%84%E5%BE%AA%E7%8E%AF%E6%80%A7"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 博弈的循环性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3%E8%A1%8C%E4%B8%BA%E9%9B%86%E6%8B%86%E8%A7%A3%E5%8A%A8%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%85%83%E7%B4%A0%E5%AF%B9-%E5%AF%B9%E5%B1%80%E4%B8%AD%E7%9A%84%E5%85%8B%E5%88%B6%E5%85%B3%E7%B3%BB%E4%BA%A7%E7%94%9F%E5%B7%A8%E5%A4%A7%E5%BD%B1%E5%93%8D"><span class="toc-number">2.3.</span> <span class="toc-text">2.3行为集拆解动作系统元素对 对局中的克制关系产生巨大影响</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E4%BD%93%E9%AA%8C%E5%8F%8D%E6%80%9D"><span class="toc-number">3.</span> <span class="toc-text">3.体验反思</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1%E5%8D%9A%E5%BC%88%E6%9C%AC%E8%B4%A8"><span class="toc-number">3.1.</span> <span class="toc-text">3.1博弈本质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2%E5%8D%9A%E5%BC%88%E7%82%B9"><span class="toc-number">3.2.</span> <span class="toc-text">3.2博弈点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3%E5%A6%82%E4%BD%952d%E6%A0%BC%E6%96%97%E8%BD%AC3d%E6%A0%BC%E6%96%97%EF%BC%9F"><span class="toc-number">3.3.</span> <span class="toc-text">3.3如何2d格斗转3d格斗？</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">1.1资源管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2%E5%8C%85%E5%AE%B9%E6%80%A7"><span class="toc-number">2.</span> <span class="toc-text">1.2包容性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-%E5%85%B3%E5%8D%A1%E8%8A%82%E5%A5%8F%E4%BC%98%E7%A7%80"><span class="toc-number">3.</span> <span class="toc-text">1.3 关卡节奏优秀</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E8%A7%92%E8%89%B2%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%88%B6"><span class="toc-number">4.</span> <span class="toc-text">2.1 角色移动机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2%E5%8A%A8%E4%BD%9C%E5%B8%A7%E6%95%B0%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F"><span class="toc-number">5.</span> <span class="toc-text">2.2动作帧数设计模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1%E8%B7%91%E8%B7%B3"><span class="toc-number">6.</span> <span class="toc-text">3.1跑跳</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E9%A2%84%E8%BE%93%E5%85%A5%E8%B7%B3%E8%B7%83"><span class="toc-number">7.</span> <span class="toc-text">3.2 预输入跳跃</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-%E8%B9%AC%E5%A2%99%E8%B7%B3"><span class="toc-number">8.</span> <span class="toc-text">3.3 蹬墙跳</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-%E7%8B%BC%E8%B7%B3"><span class="toc-number">9.</span> <span class="toc-text">3.4 狼跳</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5-%E6%94%80%E7%88%AC%E8%A1%8C%E4%B8%BA"><span class="toc-number">10.</span> <span class="toc-text">3.5 攀爬行为</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-6%E5%86%B2%E5%88%BA%E6%89%93%E6%96%AD"><span class="toc-number">11.</span> <span class="toc-text">3.6冲刺打断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-7%E5%86%B2%E5%88%BA%E8%A1%A5%E6%AD%A3"><span class="toc-number">12.</span> <span class="toc-text">3.7冲刺补正</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-8%E5%8A%A8%E9%87%8F%E5%82%A8%E5%AD%98"><span class="toc-number">13.</span> <span class="toc-text">3.8动量储存</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-9-%E5%A4%A7%E8%B7%B3%E3%80%81%E5%87%8C%E6%B3%A2%E5%BE%AE%E6%AD%A5"><span class="toc-number">14.</span> <span class="toc-text">3.9 大跳、凌波微步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-%E8%AE%BE%E8%AE%A1%E7%90%86%E5%BF%B5"><span class="toc-number">15.</span> <span class="toc-text">4.1 设计理念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-1%E8%BF%9E%E8%B4%AF%E6%80%A7%E8%AE%BE%E8%AE%A1"><span class="toc-number">15.1.</span> <span class="toc-text">4.1.1连贯性设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-2%E5%8C%85%E5%AE%B9%E6%80%A7%E8%AE%BE%E8%AE%A1%E5%92%8C%E6%93%8D%E4%BD%9C%E4%B8%8A%E9%99%90"><span class="toc-number">15.2.</span> <span class="toc-text">4.1.2包容性设计和操作上限</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-%E9%A6%96%E8%A6%81%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF"><span class="toc-number">16.</span> <span class="toc-text">4.2 首要设计思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3-%E5%85%B3%E5%8D%A1%E8%8A%82%E5%A5%8F%E5%AF%BC%E5%90%91"><span class="toc-number">17.</span> <span class="toc-text">4.3 关卡节奏导向</span></a></li></ol>
   </div>
 </section>
 
