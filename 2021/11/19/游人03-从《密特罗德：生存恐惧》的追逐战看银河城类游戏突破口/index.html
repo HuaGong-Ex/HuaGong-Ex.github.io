@@ -26,7 +26,7 @@
 
   
 
-  <title>游人02-蔚蓝移动系统拆解 | 華工新傳播學系</title>
+  <title>游人03-从《密特罗德：生存恐惧》的追逐战看银河城类游戏突破口 | 華工新傳播學系</title>
 
   
 
@@ -49,7 +49,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(/img/03.jpg)"></div>
+    <div class="post-image" style="background-image: url(/img/04.jpg)"></div>
   
 
   <!-- navbar -->
@@ -100,11 +100,11 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">游人02-蔚蓝移动系统拆解</h1>
+          <h1 class="title-wrap">游人03-从《密特罗德：生存恐惧》的追逐战看银河城类游戏突破口</h1>
           <h2 class="title-sub-wrap">
             <strong>HuaGong-Explorer</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2021-10-28T07:25:07.000Z" itemprop="datePublished">2021-10-28</time>
+            <time  class="article-date" datetime="2021-11-19T03:25:46.000Z" itemprop="datePublished">2021-11-19</time>
           </h2>
           <ul class="wrap-list dark">
   
@@ -113,11 +113,13 @@
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/%E6%8B%86%E8%A7%A3/">🏷️ 拆解</a></li>
-  
     <li><a href="/tags/%E5%B9%B3%E5%8F%B0%E8%B7%B3%E8%B7%83/">🏷️ 平台跳跃</a></li>
   
     <li><a href="/tags/%E6%9C%88%E7%82%B8/">🏷️ 月炸</a></li>
+  
+    <li><a href="/tags/%E6%9D%82%E8%B0%88/">🏷️ 杂谈</a></li>
+  
+    <li><a href="/tags/Metroidvania/">🏷️ Metroidvania</a></li>
   
 </ul>
         </div>
@@ -141,72 +143,46 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <blockquote>
-<p>一句话来评价《蔚蓝》的移动体验：手感（控制感）极佳，角色灵动十足，反馈带劲，关卡节奏优秀。</p>
-</blockquote>
-<h1 id="1-分析移动特点"><a href="#1-分析移动特点" class="headerlink" title="1.分析移动特点"></a>1.分析移动特点</h1><h2 id="1-1资源管理"><a href="#1-1资源管理" class="headerlink" title="1.1资源管理"></a>1.1资源管理</h2><p>基于资源管理的解谜是蔚蓝的一大特色。</p>
-<p>在前期，资源由固定攀爬精力+二段跳跃机会+关卡资源（如绿色水晶补充跳跃机会）组成。</p>
-<p>玩家需要对自身的资源进行管理，并收集地图资源，从而规划过关路径。</p>
-<p>这样的资源管理式解谜并不是只有唯一解，其关卡设计很好的契合了这一移动特性，通常有较多的路径选择。</p>
-<p>后续加入三段跳，实际是全局上增加了固定资源，为复杂关卡搭建提供基础。</p>
-<h2 id="1-2包容性"><a href="#1-2包容性" class="headerlink" title="1.2包容性"></a>1.2包容性</h2><p>包容性主要体现在一些细节机制上，如：跳跃预输入；边角修正；非严格操作（蹬墙跳）。</p>
-<p>落地前提前按跳跃，会在落地瞬间起跳。（预输入）</p>
-<p>蹬墙跳不必贴墙，只需距离2像素。（非严格输入）</p>
-<p>冲刺时会避开障碍，自动修正位置。（边角修正）</p>
-<p>这些机制具有极强的包容性，虽然看起来并不严格，但优化了玩家的手感，在体验上增添流畅。后面会具体提到其中一些机制。</p>
-<h2 id="1-3-关卡节奏优秀"><a href="#1-3-关卡节奏优秀" class="headerlink" title="1.3 关卡节奏优秀"></a>1.3 关卡节奏优秀</h2><p>《蔚蓝》的关卡较为简短，在这个极小的关卡空间内，能够利用已有的移动机制动态地控制关卡节奏，是其特殊之处。</p>
-<p>控制关卡节奏，主要在于冲刺点补充道具（绿色钻石，果冻墙、泡泡）的投放，以及攀爬机制制造的临时安全区（落地前动作做到一半的缓冲）。游玩体验是：停下来规划路线，进行一次快节奏的位移，这中途还可以根据玩家水平和熟练度灵活控制缓冲时间。然后再停下来循环进入一个路线的规划阶段，整体松弛有度。</p>
-<br/>
-
-<h1 id="2-量化拆帧"><a href="#2-量化拆帧" class="headerlink" title="2.量化拆帧"></a>2.量化拆帧</h1><h2 id="2-1-角色移动机制"><a href="#2-1-角色移动机制" class="headerlink" title="2.1 角色移动机制"></a>2.1 角色移动机制</h2><p><img src="/img/celeste/s1.png"></p>
-<p><img src="/img/celeste/s2.png"></p>
-<p><img src="/img/celeste/0001.png"></p>
-<p><img src="/img/celeste/0002.png"></p>
-<p><img src="/img/celeste/0003.png"></p>
-<p><img src="/img/celeste/0004.png"></p>
-<p><img src="/img/celeste/0005.png"></p>
-<p><img src="/img/celeste/0006.png"></p>
-<p><img src="/img/celeste/0007.png"></p>
-<p><img src="/img/celeste/0008.png"></p>
-<p><img src="/img/celeste/0009.png"></p>
-<p><img src="/img/celeste/0010.png"></p>
-<p><img src="/img/celeste/0011.png"></p>
-<p><img src="/img/celeste/0012.png"></p>
-<p><img src="/img/celeste/0013.png"></p>
-<p><img src="/img/celeste/0014.png"></p>
-<p><img src="/img/celeste/0015.png"></p>
-<p><img src="/img/celeste/0016.png"></p>
-<h2 id="2-2动作帧数设计模式"><a href="#2-2动作帧数设计模式" class="headerlink" title="2.2动作帧数设计模式"></a>2.2动作帧数设计模式</h2><p>通过拆解奔跑、跳跃以及冲刺的具体帧数，可以窥见其背后的设计模式。这套平台跳跃动作没有基于引擎自带的物理系统进行设计，也很少重视人物运动的真实感，反而以玩家体验恰当的手感为重，运动参数都经过开发调试（控制Player的脚本多达5471行）。</p>
-<p>在拆解时，我们可以很清楚地将动作拆分为一系列的“阶段”，即一个简单的动作由几个“阶段性动画”组成。这样的设计有利于在开发时灵活地调节，并为玩家在一个动作内寻找“阶段”的关键节点提供了微操的上限，可把玩度极强。</p>
-<br/>
-
-<h1 id="3-延申玩法"><a href="#3-延申玩法" class="headerlink" title="3.延申玩法"></a>3.延申玩法</h1><h2 id="3-1跑跳"><a href="#3-1跑跳" class="headerlink" title="3.1跑跳"></a>3.1跑跳</h2><p>通过逐帧暴力抠图，可得下图，即最大限度跑跳的曲线，距离约5.5个身位，曲线平滑。</p>
-<h2 id="3-2-预输入跳跃"><a href="#3-2-预输入跳跃" class="headerlink" title="3.2 预输入跳跃"></a>3.2 预输入跳跃</h2><p>跳跃预输入实现了动作的无缝衔接，允许玩家进行一个连续的落地跳跃（通常伴随着x轴的大幅位移），不严格要求玩家落地，保证了连贯流畅的手感；具有包容性，手残玩家也可以体会到凌波微步的快乐。</p>
-<h2 id="3-3-蹬墙跳"><a href="#3-3-蹬墙跳" class="headerlink" title="3.3 蹬墙跳"></a>3.3 蹬墙跳</h2><p>这个机制是依附于场景而出现的，且并不需要严格贴墙（&lt;2像素即可），具有包容性。制造出一种流畅自如，施展轻功的爽快手感。</p>
-<h2 id="3-4-狼跳"><a href="#3-4-狼跳" class="headerlink" title="3.4 狼跳"></a>3.4 狼跳</h2><p>狼跳，指离开地面几帧还可以进行跳跃操作。</p>
-<p>可以理解是为了包容玩家操作而设计的机制，而这也衍生出了更高的操作上限，让速通玩家有了可利用的机制（甚至延伸出挨跳刺）。</p>
-<h2 id="3-5-攀爬行为"><a href="#3-5-攀爬行为" class="headerlink" title="3.5 攀爬行为"></a>3.5 攀爬行为</h2><p>攀爬时可以执行跳跃、冲刺的行为。</p>
-<h2 id="3-6冲刺打断"><a href="#3-6冲刺打断" class="headerlink" title="3.6冲刺打断"></a>3.6冲刺打断</h2><p>在任何情况（地面、空中、墙上、有时正在进行冲刺时），只要有冲刺点，都可以优先判定进行一次冲刺。</p>
-<p>一旦输入冲刺，就会基本执行完这个动作，但可以在一个冲刺快结束（约5像素距离）时打断它进行下一个冲刺。玩家基本感受不到明显打断，这里和跳跃落地前的预输入异曲同工。</p>
-<h2 id="3-7冲刺补正"><a href="#3-7冲刺补正" class="headerlink" title="3.7冲刺补正"></a>3.7冲刺补正</h2><p>这是基于冲刺而出现的一个机制：观察残影可知，当冲刺遇到障碍时，如果障碍阻塞体积不大，可以自动补正为一个跨越障碍的冲刺。</p>
-<h2 id="3-8动量储存"><a href="#3-8动量储存" class="headerlink" title="3.8动量储存"></a>3.8动量储存</h2><p>起重机、云朵以及果冻墙都有一定的传动效果。</p>
-<h2 id="3-9-大跳、凌波微步"><a href="#3-9-大跳、凌波微步" class="headerlink" title="3.9 大跳、凌波微步"></a>3.9 大跳、凌波微步</h2><p>和起重机存储动能类似，Madeline也可以利用自身跑跳的惯性或者借力实现超长的跳跃。这类操作可以实现依赖于其动作帧数的“阶段”设计模式，在前文有提到。</p>
-<p>最常见的俯冲：跳起+向斜下方冲刺，然后迅速向右跳跃，</p>
-<p>利用高低地形还可以演变成超级Ultra Dash。</p>
-<p><img src="/img/celeste/0020.png"></p>
-<br/>
-
-<h1 id="4-设计总结"><a href="#4-设计总结" class="headerlink" title="4.设计总结"></a>4.设计总结</h1><h2 id="4-1-设计理念"><a href="#4-1-设计理念" class="headerlink" title="4.1 设计理念"></a>4.1 设计理念</h2><h3 id="4-1-1连贯性设计"><a href="#4-1-1连贯性设计" class="headerlink" title="4.1.1连贯性设计"></a>4.1.1连贯性设计</h3><p>连贯性设计涉及到一些操作细节。在《蔚蓝》 中，这主要体现为跳跃的预输入（2像素）和 冲刺打断（5像素）。 特点：判定区间很小；在动作结束前判定； 马上连续执行下一个操作。 设计目的：连贯性设计很明显是为了保证游 戏的流畅度，以制造顺滑的手感。因为在像 素级游戏中，玩家基本不能准确抓住落地的 那一帧进行起跳，因此要实现连续的跳跃， 必须进行一个简短的预输入判定。冲刺没有 使用预输入而是直接打断，因为任何情况下 新的冲刺都是处于最高优先级的，必须保持 这个平衡。预输入/打断的判定时机相当短， 实际玩家体验难以觉察，保证了“角色依旧 在玩家掌控之中”，只是手感更连贯了。</p>
-<h3 id="4-1-2包容性设计和操作上限"><a href="#4-1-2包容性设计和操作上限" class="headerlink" title="4.1.2包容性设计和操作上限"></a>4.1.2包容性设计和操作上限</h3><p>包容性设计和连贯性设计类似，也属于对判定的一定程度的宽容。 连贯性设计强调动作衔接之间的连续，包容性设计强调单个动作 判定上的宽容。狼跳（10帧）、蹬墙跳（2像素）、冲刺补正都 属于包容性设计，这些设计事实上也带来了更高的操作上限。 特点：判定区间较小；在动作生效区间判定。 设计目的：增加判定区间同样帮助玩家更轻易地实现一个操作， 在保证手感连贯流畅的同时一并提升了操作的下限和上限。在更 进阶的技巧中，如超级蹬墙跳（向上冲刺蹬墙跳），蹬墙跳的判 定区间会更大（约5像素），这样的设计也在鼓励玩家尝试更精 准和严格的操作，提升自身的操作水平。</p>
-<h2 id="4-2-首要设计思路"><a href="#4-2-首要设计思路" class="headerlink" title="4.2 首要设计思路"></a>4.2 首要设计思路</h2><p>首要：作为一款关卡制平台跳跃游戏，《蔚蓝》在设计时最先要满足的是主要人物的移动操作没有问题， 手感（控制感、流畅度）较好，然后再在不同的关卡引入各具风味的辅助移动机制。 </p>
-<p>玩家导向：《蔚蓝》的移动机制主要针对了三大类人群—手残玩家，或只想体验故事的玩家（A类）； 对操作有追求，但技术一般的玩家（B类）；速通/多面的高级成就玩家（C类）。 </p>
-<p>对于A类和部分B类玩家，《蔚蓝》会是一个高难度游戏，设计时最优先考虑到的是：让整个移动机制简 洁易懂，提升操作的判定和下限。为此引入了较少的基本移动和包容性设计，跳跃、冲刺曲线的滞空时 间实际上也是便利玩家调整落点，降低操作门槛。（对AB类玩家的照顾还体现在死亡成本低这一特点上： 关卡简短，复活迅速等） </p>
-<p>对于C类玩家，制造操作上限是必不可少的，除了包容性设计的稍稍提升外，还要设计一套合理的，考 验操作的高阶玩法，这就引入了动能存储的组合机制（凌波微步，大跳，无体力上墙，反向跳墙等）， 这套动作组合给玩家提供了极高的操作上限，并且配套引入了高阶关卡。 对于B类玩家，设计师希望他们也能学会高阶操作。这就引入了高阶操作组合更大的判定宽容度，以及 在第九章中设计显式的高阶操作教学，使这些看似极限的操作更容易学习和实现。</p>
-<h2 id="4-3-关卡节奏导向"><a href="#4-3-关卡节奏导向" class="headerlink" title="4.3 关卡节奏导向"></a>4.3 关卡节奏导向</h2><p>关卡节奏导向：作为关卡制游戏，除了面向三类玩家设计一系列基本移动机制外，《蔚蓝》的移动机 制还必须服务于关卡的构建和节奏的把控。 </p>
-<p>在一个关卡中，玩家有时需要在空中进行连续的操作，也有时要在安全区停留下来以提供思考和缓冲 的时间。这反映在蔚蓝的基本移动机制设计上就是冲刺和攀爬。 </p>
-<p>为了创造在空中连续进行的流畅操作体验，就要同时从角色移动机制和关卡移动机制入手。首先需要 在关卡中引入一系列辅助玩家进行位移的道具（弹簧、起重机、云朵等），再结合角色设计出一套扩 充行动能力的机制，这就引入了冲刺和冲刺点的设计以及一系列补充冲刺点的可收集道具。这样，角 色的连续移动能力就和关卡设计挂钩了。 </p>
-<p>最后，玩家连续的移动需要有一个安全区进行有限时间缓冲，以控制关卡节奏跟随玩家的操作水平。 这就引入了攀爬机制（这里主要是指依附在墙体上），给移动制造短暂的停留。</p>
-<br/>
+        <h1 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h1><p>近年来，独立游戏似乎对银河城情有独钟，它以其习得能力、网状地图和风格鲜明的可解锁区域而受到追捧。《密特罗德：生存恐惧》便是在这个热潮中以前辈的姿态归来了，似乎要和后辈们掰掰手腕。而网络上对于这款银河城类游戏祖宗续作的评价大多是：玩法纯粹流畅；引导出众；线性和破序流程兼顾。从这些评价来看，《密特罗德：生存恐惧》无疑在“获取能力-解锁区域”这一核心玩法上做出了令大家惊叹的关卡结构，但更令我感到惊喜的是：这一代的主题“恐惧”呈现了一个稍显不同的《银河战士》。 </p>
+<p>所以，《银河战士》为什么要加入恐怖要素？</p>
+<hr>
+<h1 id="二、为什么要有恐怖？"><a href="#二、为什么要有恐怖？" class="headerlink" title="二、为什么要有恐怖？"></a>二、为什么要有恐怖？</h1><p>其实不难想到，既然会有冒险，则必然有危险。作为一个主打地图探索的类型游戏，世界的未知和“不确定性”是玩家探图的主要动力。而“未知”既能勾起玩家的好奇心，在某些时候也能带来一定的恐惧。也就是说，冒险探索是和恐惧情绪相辅相成的。在《黑暗之魂》中，阴森的氛围、强大的敌人也经常带来恐惧的感觉（甚至比《密特罗德：生存恐惧》更甚）。然而，正是这种探索被限制的情形以及危险和机遇所带来的不确定性反差，才能更大程度激起玩家探索的欲望，搅动其游玩时的情绪。</p>
+<p>另一方面，《银河战士》系列向来都偏好一种孤独的探索氛围，这可使恐怖元素无缝地融入其中。再延续前作经验，本代的恐怖氛围就自然而然地出来了。</p>
+<p>而本作一切”恐怖”，都要从E.M.M.I追逐战说起。</p>
+<hr>
+<h1 id="三、生存恐惧的进化：追逐战"><a href="#三、生存恐惧的进化：追逐战" class="headerlink" title="三、生存恐惧的进化：追逐战"></a>三、生存恐惧的进化：追逐战</h1><p>追逐战本身意味着紧张刺激，经常在游戏高潮出现，其本身并不是一个新鲜的玩意。在2D平台类游戏中，类似《奥日》、《蔚蓝》建立在平台跳跃玩法上的追逐战似乎和“恐怖”并不沾边，那《密特罗德：生存恐惧》的追逐战到底有什么不同？</p>
+<p><img src="/img/dread/05.png"></p>
+<h2 id="既是局部，又是整体"><a href="#既是局部，又是整体" class="headerlink" title="既是局部，又是整体"></a>既是局部，又是整体</h2><p><strong>局部</strong>：有人戏称《密特罗德：生存恐惧》是“局部生存恐惧”，此话不假。因为只有进入E.M.M.I区域，才会有怪物穷追不舍。因此，从游戏世界的区域分布来看，恐惧是局部呈现的。·</p>
+<p><strong>整体</strong>：但是，从系统层面来看，“恐惧”和逐战玩法却贯穿始终。不是BOSS战，也不是特殊事件，而是穿插在玩家整个游玩流程中的不可避免的环节。即便进入E.M.M.I区域，玩家仍然处在“探索地图——寻找出口”的游戏流程中，和其他区域没有任何割裂，变的只有游玩节奏和氛围。</p>
+<p><img src="/img/dread/03.png"></p>
+<p><strong><center>EMMI区域斜跨整个戴隆地图</center></strong></p>
+<h2 id="不可战胜的敌人"><a href="#不可战胜的敌人" class="headerlink" title="不可战胜的敌人"></a>不可战胜的敌人</h2><p>我们经常说，要做恐怖游戏，主角就得手无缚鸡之力。无论从心理上还是从实操上，无法反抗才更容易被恐吓。</p>
+<p>E.M.M.I追逐战，是一套躲避——还击结合的恐怖机制。在躲避阶段，玩家通常只能夺路狂奔或者潜行远离，被碰一下就基本得读盘（而小概率+高操作精度的还击系统则是基本为了速通玩家准备）。可以说进入了E.M.M.I区域，萨姆斯就是手无缚鸡之力的——即时game over，这便成为了恐怖感出现的重要条件。</p>
+<p>另外，E.M.M.I区域没有常规小怪，这也将玩家的注意力从战斗拉回到了探索和逃脱上。</p>
+<p><img src="/img/dread/00.jpg"></p>
+<h2 id="AI捷径"><a href="#AI捷径" class="headerlink" title="AI捷径"></a>AI捷径</h2><p>E.M.M.I阀门，即玩家不可以走而E.M.M.I可以行动的阀门。这个设计的出现极大提升了怪物AI跑图追捕玩家的灵活度。一整片区域只有一个E.M.M.I，而它会在收到信号后极其迅捷地达到玩家的所在地，并且在追捕过程中享有路径特权。这样非对称的地图设计破解了单纯控制AI速度的困境，让E.M.M.I比玩家移动的更方便，但又不至于在绝对速度上碾压玩家，更多的是考验玩家的路径规划和临时反应。</p>
+<p><img src="/img/dread/01.png"></p>
+<p><strong><center>卡塔利斯的EMMI区域遍布这种怪物专用捷径</center></strong></p>
+<h2 id="逃脱-还击的循环"><a href="#逃脱-还击的循环" class="headerlink" title="逃脱-还击的循环"></a>逃脱-还击的循环</h2><p>被追击时的恐惧感会在得到大杀器时得到短暂的消解，但马上刺激将再度袭来——大杀器的使用条件相当苛刻。我们需要在一条长道上持续瞄准射击，击破外壳后再蓄力一发入魂，整个过程对操作要求也会不断提高。</p>
+<p>这时，因为必须站立不动，恐惧一步步袭来的感受会愈发真实，而手持杀器带来的巨大力量也会让刺激感达到峰值。玩家扣动扳机那一刻，这整个区域的”生存恐惧”就轰轰烈烈地告一段落了，所有紧张和压力也悉数释放。至此，恐惧紧张——规划路线逃脱——获取能力——得到大杀器——直面恐惧的高潮——一发入魂就形成了控制玩家心流的一套跌宕起伏的循环。</p>
+<p><img src="/img/dread/04.png"></p>
+<h2 id="视角转换"><a href="#视角转换" class="headerlink" title="视角转换"></a>视角转换</h2><p>虽然是一个2D视角游戏，但除过场CG外还有两个时刻这个视角会发生转变：被制服在地时，以及得到杀器瞄准时。这些都处于流程的高潮，且玩家是无法移动的，流畅自如地将视角切换成3D，形成了局部更真实的体验，是相当有意思的一个设计。</p>
+<p><img src="/img/dread/02.png"></p>
+<h2 id="跟进成长"><a href="#跟进成长" class="headerlink" title="跟进成长"></a>跟进成长</h2><p>《银河战士》系列不像类恶魔城游戏一样有那么多的RPG要素，它的成长更为纯粹直观，也从不吝啬给予玩家各种逆天的能力（无限跳跃还带电、凤凰之舞冲到底）。在获得这些能力之后，躲避和逃脱就有了更多花样。而E.M.M.I也同样会跟随玩家成长，不只是速度，还在于它们所具备的各类技能，以及地图设计所带来的难度攀升，使“恐惧”能够随着玩家的飞速成长而渐进式增长。</p>
+<p>其他的如孤独探索的氛围、诡异的音乐都是提升恐怖和刺激感的工具，在此不过多赘述。</p>
+<hr>
+<h1 id="四、恐惧如何能融入玩法"><a href="#四、恐惧如何能融入玩法" class="headerlink" title="四、恐惧如何能融入玩法"></a>四、恐惧如何能融入玩法</h1><p>“局部恐惧”只是本代《银河战士》的一个玩法特色。本质上也是融入了其他玩法系统而产生的主题性机制，这其中有很多方面和银河城的常用机制和玩法结合了起来。</p>
+<p>那么，恐惧如何能与玩法结合？</p>
+<h2 id="路径规划"><a href="#路径规划" class="headerlink" title="路径规划"></a>路径规划</h2><p>初次进入一个E.M.M.I区域时，因为小地图对应区域还未解锁，玩家只能随机应变，往前冲到哪是哪。幸运的是，无论往哪里走，基本都不存在绝对的错路/死路，只要操作迅速，玩家总能找到逃离的方向。即使是被堵到物理意义的死路，也一般会设置一些机关帮助玩家放风筝，为原路返回提供了机会。所以在保证刺激追逐的同时，降低了玩家的挫败感，在对地图还不熟悉的阶段降低难度。</p>
+<p> 而在获取能力——重返E.M.M.I区域时，整个区域的框架已经基本展现。这时更考验玩家路径规划的能力（往往要记住门的位置和风筝点），无论是哪种玩法，本身和其错综复杂网状延伸的地图就是绝妙搭配。 </p>
+<h2 id="单向门"><a href="#单向门" class="headerlink" title="单向门"></a>单向门</h2><p>银河城类游戏中的单向门机制可以说是相当经典了。本作中，E.M.M.I区域的E.M.M.I阀门（怪物专属捷径）会在消灭怪物后为玩家开通，帮助玩家快速穿梭该区域。一个机制，两种用途，前期方便怪物，后期方便玩家，是使单向门设计和追逐战深度融合的产物。</p>
+<h2 id="成长验证"><a href="#成长验证" class="headerlink" title="成长验证"></a>成长验证</h2><p>需要注意的是，即使后期E.M.M.I有诸如冰冻、电击之类的技能，玩家的成长速度也始终要比E.M.M.I快。围绕移动能力进行的角色提升让躲避和探索的能力指数级增长，也就是说后期玩家几乎无需考虑高度和距离之类的限制，能够到达所有能看到的地方。</p>
+<p>这时，E.M.M.I追逐战就变成了一次又一次具有验证性质的战斗——在能力提升后去面对一个老朋友。玩家技术的攀升和能力的爆炸都会直观地通过这个追逐战展现，让那些逆天的能力有了更多用武之地和验证场景，而最初的恐惧也会在最后逐渐消解，从情绪上实现成长感。</p>
+<hr>
+<h1 id="五、结语：恐惧的消解"><a href="#五、结语：恐惧的消解" class="headerlink" title="五、结语：恐惧的消解"></a>五、结语：恐惧的消解</h1><p>写到这里，其实不难发现：追逐战本身和银河战士核心玩法的两个维度（地图/能力）是强相关的。它既是一个对路线规划的考验，也是一个对能力提升的验证。体验上有足够优秀的氛围和细节，立意上拿恐惧和不确定性激起玩家对探索的共鸣。总的来说是一个意外而优秀的设计。</p>
+<p>有人说坂本贺勇和水银蒸汽团队重新诠释了银河城，我更倾向于说他们在地图/能力这一核心玩法上加入了没有割裂感的新东西。独立游戏喜欢做Metroidvania也不是一天两天的事了，有的喜欢在动作系统上下功夫，有的则靠世界观让人买单，绝大多数加入了恶魔城式的RPG要素（万物皆可RPG）。很多东西属于是一套外围的系统设计，更像是在一个成熟的玩法上去设计如何堆东西——这样固然能做出更好的作品，也确实使Metroidvania百花齐放，各有不同。但能像《密特罗德：生存恐惧》这样从核心玩法和体验上提取出新机制的，仅此一家。</p>
+<p><img src="/img/dread/06.jpg"></p>
+<p><strong><center>真要说类型游戏有什么“突破口”，想必也得溯源到这种程度才有希望。</center></strong></p>
 
       </section>
 
@@ -214,32 +190,16 @@
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="/img/04.jpg"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2021/11/19/%E6%B8%B8%E4%BA%BA03-%E4%BB%8E%E3%80%8A%E5%AF%86%E7%89%B9%E7%BD%97%E5%BE%B7%EF%BC%9A%E7%94%9F%E5%AD%98%E6%81%90%E6%83%A7%E3%80%8B%E7%9A%84%E8%BF%BD%E9%80%90%E6%88%98%E7%9C%8B%E9%93%B6%E6%B2%B3%E5%9F%8E%E7%B1%BB%E6%B8%B8%E6%88%8F%E7%AA%81%E7%A0%B4%E5%8F%A3/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">游人03-从《密特罗德：生存恐惧》的追逐战看银河城类游戏突破口</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="/img/00.jpg"></div>
+      <div class="card-cover" background-image-lazy data-img="/img/03.jpg"></div>
     
     <div class="card-text">
       
-        <a href="/2021/10/27/%E6%B8%B8%E4%BA%BA01-%E4%BB%BB%E5%A4%A9%E5%A0%82%E6%98%8E%E6%98%9F%E5%A4%A7%E4%B9%B1%E6%96%97%E5%8D%9A%E5%BC%88%E6%8B%86%E8%A7%A3/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">游人01-任天堂明星大乱斗博弈拆解</h2>
+        <a href="/2021/10/28/%E6%B8%B8%E4%BA%BA02-%E8%94%9A%E8%93%9D%E7%A7%BB%E5%8A%A8%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">游人02-蔚蓝移动系统拆解</h2>
         </a>
       
       <div class="card-text--row">Older</div>
@@ -308,7 +268,7 @@
     <span>TOC</span>
   </div>
   <div class="widget-body">
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">1.1资源管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2%E5%8C%85%E5%AE%B9%E6%80%A7"><span class="toc-number">2.</span> <span class="toc-text">1.2包容性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-%E5%85%B3%E5%8D%A1%E8%8A%82%E5%A5%8F%E4%BC%98%E7%A7%80"><span class="toc-number">3.</span> <span class="toc-text">1.3 关卡节奏优秀</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E8%A7%92%E8%89%B2%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%88%B6"><span class="toc-number">4.</span> <span class="toc-text">2.1 角色移动机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2%E5%8A%A8%E4%BD%9C%E5%B8%A7%E6%95%B0%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F"><span class="toc-number">5.</span> <span class="toc-text">2.2动作帧数设计模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1%E8%B7%91%E8%B7%B3"><span class="toc-number">6.</span> <span class="toc-text">3.1跑跳</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E9%A2%84%E8%BE%93%E5%85%A5%E8%B7%B3%E8%B7%83"><span class="toc-number">7.</span> <span class="toc-text">3.2 预输入跳跃</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-%E8%B9%AC%E5%A2%99%E8%B7%B3"><span class="toc-number">8.</span> <span class="toc-text">3.3 蹬墙跳</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-%E7%8B%BC%E8%B7%B3"><span class="toc-number">9.</span> <span class="toc-text">3.4 狼跳</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5-%E6%94%80%E7%88%AC%E8%A1%8C%E4%B8%BA"><span class="toc-number">10.</span> <span class="toc-text">3.5 攀爬行为</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-6%E5%86%B2%E5%88%BA%E6%89%93%E6%96%AD"><span class="toc-number">11.</span> <span class="toc-text">3.6冲刺打断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-7%E5%86%B2%E5%88%BA%E8%A1%A5%E6%AD%A3"><span class="toc-number">12.</span> <span class="toc-text">3.7冲刺补正</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-8%E5%8A%A8%E9%87%8F%E5%82%A8%E5%AD%98"><span class="toc-number">13.</span> <span class="toc-text">3.8动量储存</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-9-%E5%A4%A7%E8%B7%B3%E3%80%81%E5%87%8C%E6%B3%A2%E5%BE%AE%E6%AD%A5"><span class="toc-number">14.</span> <span class="toc-text">3.9 大跳、凌波微步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-%E8%AE%BE%E8%AE%A1%E7%90%86%E5%BF%B5"><span class="toc-number">15.</span> <span class="toc-text">4.1 设计理念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-1%E8%BF%9E%E8%B4%AF%E6%80%A7%E8%AE%BE%E8%AE%A1"><span class="toc-number">15.1.</span> <span class="toc-text">4.1.1连贯性设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-2%E5%8C%85%E5%AE%B9%E6%80%A7%E8%AE%BE%E8%AE%A1%E5%92%8C%E6%93%8D%E4%BD%9C%E4%B8%8A%E9%99%90"><span class="toc-number">15.2.</span> <span class="toc-text">4.1.2包容性设计和操作上限</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-%E9%A6%96%E8%A6%81%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF"><span class="toc-number">16.</span> <span class="toc-text">4.2 首要设计思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3-%E5%85%B3%E5%8D%A1%E8%8A%82%E5%A5%8F%E5%AF%BC%E5%90%91"><span class="toc-number">17.</span> <span class="toc-text">4.3 关卡节奏导向</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A2%E6%98%AF%E5%B1%80%E9%83%A8%EF%BC%8C%E5%8F%88%E6%98%AF%E6%95%B4%E4%BD%93"><span class="toc-number">1.</span> <span class="toc-text">既是局部，又是整体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8D%E5%8F%AF%E6%88%98%E8%83%9C%E7%9A%84%E6%95%8C%E4%BA%BA"><span class="toc-number">2.</span> <span class="toc-text">不可战胜的敌人</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AI%E6%8D%B7%E5%BE%84"><span class="toc-number">3.</span> <span class="toc-text">AI捷径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%83%E8%84%B1-%E8%BF%98%E5%87%BB%E7%9A%84%E5%BE%AA%E7%8E%AF"><span class="toc-number">4.</span> <span class="toc-text">逃脱-还击的循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%86%E8%A7%92%E8%BD%AC%E6%8D%A2"><span class="toc-number">5.</span> <span class="toc-text">视角转换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%9F%E8%BF%9B%E6%88%90%E9%95%BF"><span class="toc-number">6.</span> <span class="toc-text">跟进成长</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92"><span class="toc-number">7.</span> <span class="toc-text">路径规划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%90%91%E9%97%A8"><span class="toc-number">8.</span> <span class="toc-text">单向门</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%90%E9%95%BF%E9%AA%8C%E8%AF%81"><span class="toc-number">9.</span> <span class="toc-text">成长验证</span></a></li></ol>
   </div>
 </section>
 
