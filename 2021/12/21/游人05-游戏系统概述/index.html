@@ -26,7 +26,7 @@
 
   
 
-  <title>游人01-任天堂明星大乱斗博弈拆解 | 華工新傳播學系</title>
+  <title>游人05-游戏系统概述 | 華工新傳播學系</title>
 
   
 
@@ -49,7 +49,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(/img/00.jpg)"></div>
+    <div class="post-image" style="background-image: url(/img/06.jpg)"></div>
   
 
   <!-- navbar -->
@@ -100,11 +100,11 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">游人01-任天堂明星大乱斗博弈拆解</h1>
+          <h1 class="title-wrap">游人05-游戏系统概述</h1>
           <h2 class="title-sub-wrap">
             <strong>HuaGong-Explorer</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2021-10-27T05:57:04.000Z" itemprop="datePublished">2021-10-27</time>
+            <time  class="article-date" datetime="2021-12-21T13:01:54.000Z" itemprop="datePublished">2021-12-21</time>
           </h2>
           <ul class="wrap-list dark">
   
@@ -113,11 +113,9 @@
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/%E6%8B%86%E8%A7%A3/">🏷️ 拆解</a></li>
+    <li><a href="/tags/%E6%9C%88%E7%82%B8/">🏷️ 月炸</a></li>
   
-    <li><a href="/tags/ACT/">🏷️ ACT</a></li>
-  
-    <li><a href="/tags/brandon/">🏷️ brandon</a></li>
+    <li><a href="/tags/%E7%B3%BB%E7%BB%9F/">🏷️ 系统</a></li>
   
 </ul>
         </div>
@@ -141,38 +139,140 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <blockquote>
-<p>前言：格斗游戏本质上就是回合制的博弈游戏，从博弈角度拆解动作系统可以对该游戏有着全新的认识和理解。</p>
+        <h1 id="一、什么是游戏系统"><a href="#一、什么是游戏系统" class="headerlink" title="一、什么是游戏系统"></a>一、什么是游戏系统</h1><h2 id="1-1唯物辩证的角度（？）"><a href="#1-1唯物辩证的角度（？）" class="headerlink" title="1.1唯物辩证的角度（？）"></a>1.1唯物辩证的角度（？）</h2><p><strong>唯物辩证法</strong>告诉我们：</p>
+<p><strong>系统</strong>是由相互联系和相互作用的诸<strong>要素</strong>构成的统一整体，系统的基本特征是整体性、有序性和内部结构的优化趋向。</p>
+<p><strong>系统</strong>与要素的关系，一定意义上正是整体与部分之关系。</p>
+<p>而所谓<strong>游戏系统</strong>，指的是<strong>游戏中由相互作用的若干条设计机制组成的、具有特定功能作用的有机整体</strong>。</p>
+<p>它存在的意义，即是以模块化的方式展现游戏机制，并对于我们认识游戏、开发游戏、玩家体验游戏发挥具体的功能。也就是说，我们做一个游戏系统，就是用一系列相互关联的机制去实现一整个具体的目的/体验。</p>
+<h2 id="1-2狭义游戏系统"><a href="#1-2狭义游戏系统" class="headerlink" title="1.2狭义游戏系统"></a>1.2狭义游戏系统</h2><p><strong>唯物辩证法</strong>强调了游戏系统作为<strong>机制集合</strong>和<strong>整体</strong>的作用。</p>
+<p>现在我们从另一个学术的观点出发：</p>
+<p>Donella.H.Meadows在其作品《系统之美》中将元素和其相互关系定义为Stocks和Flows</p>
+<p>其中，关键之处有两点：1. 资源类型（Stocks） 2. 资源的流向与正负关系（Flow）。</p>
+<p><strong>平衡型循环（Balancing Loop）</strong></p>
+<p><img src="/img/system/001.jpg"></p>
+<p><strong>增强型循环（Reinforcing Loop）</strong></p>
+<p><img src="/img/system/002.jpg"></p>
+<p><strong>循环的组合</strong></p>
+<p><img src="/img/system/003.jpg"></p>
+<p><strong>资源入口（Resources）与出口（Sink）：</strong></p>
+<p>几乎任何系统都是开放的——即需要有外部资源的流入，同时内部资源也会向外部流出。这就是所谓的“入口”与“出口”。</p>
+<p>通常而言，完全封闭的系统只存在与理论之中。</p>
+<br/>
+
+<br/>
+
+<p>从这里出发，我们可以得到一个新的概念：</p>
+<p><strong>游戏系统，是游戏状态之间的相互关系与流向。</strong></p>
+<p><strong>系统，是资源的循环与联系。游戏机制，是玩家的可执行的行为。</strong></p>
+<p><strong>玩家执行的行为，导致了资源的循环与流动。</strong></p>
+<br/>
+
+<br/>
+
+<hr>
+<h1 id="二、游戏系统的构成"><a href="#二、游戏系统的构成" class="headerlink" title="二、游戏系统的构成"></a>二、游戏系统的构成</h1><p>一般，从大的分类来说，游戏系统分为<strong>主系统</strong>和<strong>支系统</strong>。</p>
+<p>我们将<strong>规则繁多但功能和内容又相对趋同、互有联系的系统</strong>称作主系统，</p>
+<p>而<strong>规则较少且功能和内容相对独立、相对单一的系统</strong>称作支系统或子系统。</p>
+<p>以游戏一整个集合体来分，</p>
+<p>所有的游戏系统可以分为六大主系统。</p>
+<p>分别是：</p>
+<p>（1）<strong>基础系统</strong>，支撑游戏基本运行功能，但不属于游戏可玩内容的系统模块。如账号登录系统、游戏设置系统等。</p>
+<p>（2）<strong>养成系统</strong>，游戏中包括角色养成、宠物养成、装备养成等养成内容的系统模块。</p>
+<p>（3）<strong>战斗系统</strong>，包含怪物系统、技能系统、枪械系统（射击游戏）等在内的与游戏方式相关的系统模块。</p>
+<p>（4）<strong>玩法系统</strong>，游戏中的玩法，如战场玩法、竞技场玩法、副本关卡、开放世界等。</p>
+<p>（5）<strong>经济系统</strong>，游戏中涵盖产出、积累、交易、消耗等环节的系统模块。</p>
+<p>（6）<strong>社交系统</strong>，游戏中人人交互、人机交互等内容的系统模块。</p>
+<p><img src="/img/system/004.jpg"></p>
+<p>【常见的游戏六大主系统】</p>
+<p>六大主系统继续细分，还有诸多的支系统。</p>
+<p>例如在养成系统中，就有着宠物养成系统、装备养成系统等多个子养成系统（支系统）。</p>
+<p>也就是说，诸多的支系统（也叫子系统）组合起来就成了主系统，</p>
+<p>而六大主系统则构成了整个游戏的系统框架。</p>
+<p>这就是我们业界常常说的“游戏系统框架”。</p>
+<p>这里需要注意的是，</p>
+<p>六大主系统之间不是互相独立的，而是互有联系、相辅相成。</p>
+<p>这主要是因为支撑主系统的支系统，本身有可能有属于两大主系统的设计内容。</p>
+<p>例如经济系统中的交易行为，本身也属于社交行为的一种，属于社交系统的一个部分。</p>
+<br/>
+
+<br/>
+
+<hr>
+<h1 id="三、如何构建游戏系统"><a href="#三、如何构建游戏系统" class="headerlink" title="三、如何构建游戏系统"></a>三、如何构建游戏系统</h1><h2 id="3-1定位"><a href="#3-1定位" class="headerlink" title="3.1定位"></a>3.1定位</h2><blockquote>
+<p>这个系统在整个游戏里处于什么定位？核心/延伸/辅助/商业？养成/玩法/社交？它与游戏中其他系统构成什么关系？ ——为此你需要简单构建一张游戏全系统的脑图，清晰勾勒出该系统的定位。</p>
 </blockquote>
-<p><img src="https://img-blog.csdnimg.cn/3eb7659c41834145a9634add965e25c2.png?x-oss-process=image,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5LuK5aSp5L2g5Lus5o6J5aS05Y-R5LqG5ZCX,size_20,color_FFFFFF,t_70,g_se,x_16"></p>
-<p><img src="https://img-blog.csdnimg.cn/c3e4e38fda3d4b53847fe4521c52a300.png?x-oss-process=image,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5LuK5aSp5L2g5Lus5o6J5aS05Y-R5LqG5ZCX,size_20,color_FFFFFF,t_70,g_se,x_16" alt="这是拆解的主体框架"></p>
-<h2 id="1-博弈映射部分"><a href="#1-博弈映射部分" class="headerlink" title="1.博弈映射部分"></a>1.博弈映射部分</h2><h3 id="1-1博弈概念"><a href="#1-1博弈概念" class="headerlink" title="1.1博弈概念"></a>1.1博弈概念</h3><p>博弈是指在一定的游戏规则约束下，基于直接相互作用的环境条件，各参与人依靠所掌握的信息，选择各自策略（行动），以实现利益最大化和风险成本最小化的过程（百度百科）</p>
-<p>在<strong>《super smash bros 》</strong>中，博弈由5方面组成<br><strong>博弈的参加者</strong>：即博弈过程中独立决策、独立承担后果的个人和组织；<br>指游戏中对抗中的玩家与玩家/玩家与AI<br><strong>博弈信息</strong>：即博弈者所掌握的对选择策略有帮助的情报资料；<br>指己方与敌方角色的动作机制、技能特性、地图信息，血量、道具资源，角色的攻击判定框大小等<br><strong>搏弈方可选择的全部行为或策略的集合</strong>：<br>包括距离控制，道具获取，场上站位，猛击/普攻/smash的选择 攻击方向和位移的选择等。<br><strong>博弈的次序</strong>：即博弈参加者做出策略选择的优先级.<br><strong>博弈方的收益</strong>：即各博弈方做出决策选择后的取得的博弈优势资源和劣势资源。<br><strong>super smash bros</strong>中的格斗价值杠杆为血量，敌方血量的损失量决定角色击飞距离以及距离死亡的危险程度。</p>
-<h3 id="1-2-博弈流程分析"><a href="#1-2-博弈流程分析" class="headerlink" title="1.2 博弈流程分析"></a>1.2 博弈流程分析</h3><p>博弈是格斗游戏的胜负手，博弈后选择的行为集决定了玩家在对局中的收益与损失。</p>
-<p>下面，将通过一局对战的流程解析玩家博弈中的行为以及博弈在游戏中的映射<br><img src="https://img-blog.csdnimg.cn/3a77ad3855c1402e842c32d09c6d9f91.png?x-oss-process=image,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5LuK5aSp5L2g5Lus5o6J5aS05Y-R5LqG5ZCX,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/b88fcd61e7a44f7cace5a2ff33c02de7.png?x-oss-process=image,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5LuK5aSp5L2g5Lus5o6J5aS05Y-R5LqG5ZCX,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/908b8e4dfc1546ef8bc0473e64f09b39.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5LuK5aSp5L2g5Lus5o6J5aS05Y-R5LqG5ZCX,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="1-3博弈资源拆解"><a href="#1-3博弈资源拆解" class="headerlink" title="1.3博弈资源拆解"></a>1.3博弈资源拆解</h3><p>可将博弈资源分为动态资源和静态资源两类。</p>
-<p> 静态资源包括游戏规则、地图以及角色预制属性，静态资源的保有度是不变的。<br>动态资源包括血条、场上站位、角色状态（攻/守、移动/静止），道具等，动态资源随着对局发展时刻发生变化。</p>
-<h2 id="2-动作系统拆解"><a href="#2-动作系统拆解" class="headerlink" title="2.动作系统拆解"></a>2.动作系统拆解</h2><h3 id="2-1系统分析"><a href="#2-1系统分析" class="headerlink" title="2.1系统分析"></a>2.1系统分析</h3><p><em>我选取了林克作为分析对象</em><br>林克的动作资源包括空中动作资源、地面动作资源和特殊资源。<br><strong>可以得出林克在博弈过程中优劣资源的总体评价</strong><br>优势：较多的远程攻击技能（炸弹、回旋镖、弓箭、剑气）<br>             多样的KO技（除普攻，其他攻击均易触发KO）<br>              控制场上站位能力优秀<br>             剑的伤害判定范围较大<br>劣势：许多攻击后摇帧过长，破绽较多<br>             移动偏慢，回场（生存）能力较差<br>              对近身敌人防御能力较差</p>
-<p>在大多数榜单排行中，林克的战力均处于标准线之上的位置，混合进攻以及优秀的远程拉扯能力是他的优势所在，同时炸弹回旋镖也颇具游戏趣味。</p>
-<h3 id="2-2-博弈的循环性"><a href="#2-2-博弈的循环性" class="headerlink" title="2.2 博弈的循环性"></a>2.2 博弈的循环性</h3><p>之前在博弈映射部分已经提到，格斗游戏本质上是零和博弈，玩家行为模式、状态的改变均对游戏博弈资源发生改变，下面就用X、Y散点图来表示这种系统的循环性。<br>场上玩家：林克&amp;enemy<br>游戏中<br>博弈静态资源的分配是稳定的，双方均分配50%<br>而动态资源随着游戏对局双方博弈策略的使用发生动态改变</p>
-<p>格斗游戏中，每一次双方之间的攻防以及行为模式的改变均可以细分成一次回合，只不过相较于回合制游戏的资源的线性变化，格斗游戏以拟态曲线进行发展，下面是我将林克和对手的10次攻防回合做出了X、Y散点图</p>
-<p><img src="https://img-blog.csdnimg.cn/814998c716c74d288c549cdd5f31dac5.png?x-oss-process=image,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5LuK5aSp5L2g5Lus5o6J5aS05Y-R5LqG5ZCX,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>解释：1.游戏的博弈资源是恒定的单位1，对局开始，双方的博弈资源均是0.5<br>2.回合1是林克打破立回局面，进入攻势，他获得了对手伤害值的反馈以及场上站位的主动权，对于开场这回合，他获得了0.1博弈资源的加成。<br>3.后续的变化均来自双方之间的攻防策略的选择，或是道具资源的加入短暂在本回合获得优势。<br>4.若对该函数曲线求定积分，面积的大小是判定游戏胜负的决定要素，在通常情况下，随着回合数的增多，面积突破一个固定值，该角色将获得胜利。<br>5.当然，若出现自杀、回场失误等决定比赛的关键失误，该角色在这回合的博弈资源损失量接近无穷大，直接使对手获得胜利。<br>6.博弈资源的消耗和获得是相互的，林克损失的博弈资源将被对手获取。<br>7.对于林克自身，采取不同的行为模式和战术策略使得自身的博弈资源不断增加或减少，最终在对局结束后形成博弈资源在游戏对战中的集中反馈，形成了角色内部的获取-反馈小循环。<br>8.对于双方，见招拆招的攻防,使得双方的博弈资源不断发生转换，而但总和始终保持不变，形成格斗系统内部资源的大循环。</p>
-<h3 id="2-3行为集拆解动作系统元素对-对局中的克制关系产生巨大影响"><a href="#2-3行为集拆解动作系统元素对-对局中的克制关系产生巨大影响" class="headerlink" title="2.3行为集拆解动作系统元素对 对局中的克制关系产生巨大影响"></a>2.3行为集拆解动作系统元素对 对局中的克制关系产生巨大影响</h3><p>分为3个方面，分别是时间维度，空间维度和指令维度。<br>时间维度方面：不同动作组合分别具有不同的前摇后摇帧，而攻防直接的帧数差直接决定了攻击或者防御的奏效与否。<br>空间维度方面：移动，跳跃，静止都带来场上位置的变化，场上站位也是格斗游戏中博弈的关键点，不同的空间高度层次直接影响攻击的克制关系，例如角色因二段跳处于高位，则上吹飞、上必杀可对其带来克制关系。<br>指令维度：由于格斗游戏的预输入机制，不同的招数列表拥有不同的优先级，利用好预输入机制可以使用目押连段等方式持续克制对方角色。</p>
-<h2 id="3-体验反思"><a href="#3-体验反思" class="headerlink" title="3.体验反思"></a>3.体验反思</h2><h3 id="3-1博弈本质"><a href="#3-1博弈本质" class="headerlink" title="3.1博弈本质"></a>3.1博弈本质</h3><p>FTG强调胜负概念，是零和博弈。之前已经提到过玩家本身内部的循环以及对局双方之间的博弈循环，再补充一些观点以对博弈本质进行阐述。<br>博弈不仅包括对局双方的博弈，还包括玩家与自己心理的博弈，需要即时在与对手的博弈中，与自己本来的操作习惯进行心理对峙与博弈。<br>因此我们得出FTG中博弈的本质 ：玩家获取静态资源的信息资源，争夺游戏中的动态资源，在回合制的对抗中使自己处于有利形势。</p>
-<h3 id="3-2博弈点"><a href="#3-2博弈点" class="headerlink" title="3.2博弈点"></a>3.2博弈点</h3><p>1.势的争夺<br>游戏中可将玩家的状态分为攻势、中势与守势。</p>
-<p>根据玩家博弈策略的有效与否，攻守势会不断发生变化。</p>
-<p>玩家所处的势态决定了之后的行为模式，处于守势而定玩家需要把握好攻势玩家在攻击之后短暂出现的中势时间及时扭转势态。处于攻势的玩家需要利用场上站位、动作资源等将自己保持在攻势状态、</p>
-<p>而中势则是玩家对抗中神经最紧绷的状态，随时可能通过攻防回合进入攻势或者守势。</p>
-<p>2.择<br>指在处于有利帧/对手暂时硬直状态，使得对手做出博弈选择。</p>
-<p>多择：多择类似于猜拳，进攻方有两种以上发起进攻的方式，分别对应着防御方不同的有效防守的方式，只有预判到了（或者猜中了）进攻方的手段，才能进行有效的防御，阻止进攻方完成确认。<br>这考验处于劣势一方的即时博弈能力，而处于有利一方的玩家，由于占据大量博弈资源，需要利用好择，将优势转化为胜势。<br>3.场地的争夺</p>
-<p>无论是如KOF将对手逼近边角，还是《super smash bros》中将对手击飞出中场，博弈的核心点均是为了场地的争夺。一般来说，越靠近中间位置，越处于有利地位。因为其可用的博弈资源很多，向左向右向上跳跃等都可以使用，可以衍生出很多攻防方案，而处于边场的玩家只有2个方向可以选择，并且占据的博弈资源很少，对手很容易预判其行为模式进行进攻压制。 </p>
-<p>4.帧数<br>抓帧也是出色的格斗游戏玩家不可忽视的博弈关键点，通过之前分析的出招帧数表，可以明确了解各种招数的出招帧数，在于对手进行对抗时，需要合理规划自己出招的伤害与速度的平衡性，同时利用预输入机制将自己出招连续化。目押等操作都是把握攻击招式的间隔帧数差，实现博弈过程中的收益最大化。</p>
-<h3 id="3-3如何2d格斗转3d格斗？"><a href="#3-3如何2d格斗转3d格斗？" class="headerlink" title="3.3如何2d格斗转3d格斗？"></a>3.3如何2d格斗转3d格斗？</h3><p>1.3D游戏增加了一个坐标轴，使得原来平面的对战变得多维度化。原先的对于距离控制博弈在多维度下显然难以维系，因为对手在X轴和Y轴均可躲避。</p>
-<p>因此需要增加类似永劫无间钩索这种快速位移道具，或者如火影忍者究极风暴中快速锁定近身的键位操作，实现位移的精准化。使得原先的2D横屏对抗中的即时博弈在3D中仍然适用。</p>
-<p>2D游戏中的攻防节奏速度极快，极大考验博弈的精准性和技巧性，3D游戏视野开阔，空间大，攻防转换较慢，需要增加随着格斗时间增加，场地逐渐缩小（或毒圈逐渐包围）的机制，逐渐收缩玩家间的动作资源，实现博弈的正常运行。</p>
-<p>3.增强地形/地图架构在游戏对战的重要性，玩家利用地形掩体抵挡对手攻击，利用不同地域的高低差实现下落攻击，将得原先的博弈资源得到合理补充。</p>
-<p>4.减少跳跃的高度和速度，3D格斗游戏非ACT需要大量的空中攻击之类的表演性对抗，频繁的跳跃对于游戏镜头视角也极难处理，降低跳跃高度和速度使得玩家更注重于地面的对战博弈。</p>
-<p>5.在页面追加小地图，显示双方位置，使得博弈过程中对于的场地控制。</p>
+<p>定位放在最前面，是因为它和整个游戏系统的构造息息相关——它应该有怎样的体验？它和其他系统间应该有怎样的结构性联系？他在整体资源进出上应该占有多数？这都应当由定位来做一个先行的决定。</p>
+<p><img src="/img/system/005.jpg"></p>
+<p>例如P5的COOP系统，整体定位是核心的RPG养成系统。这就决定了它在日常中所占的分量，也决定了它在RPG游戏中对战斗系统的反作用影响。最重要的是，这个定位能给出一些体验上的要求，然后就可以按照这个目的去设计机制来构建这个系统（毕竟，我们在第一部分说过，系统是一个机制的集合）。</p>
+<blockquote>
+<p>买贴贴大气功的工具人罢了，我从来没喜欢过这个女人……什么？还有实验要做？马上来！</p>
+</blockquote>
+<br/>
+
+<h2 id="3-2目的和体验"><a href="#3-2目的和体验" class="headerlink" title="3.2目的和体验"></a>3.2目的和体验</h2><blockquote>
+<p>为什么要有这个系统？它弥补了某种属性追求？补缺了某类实力验证？拉动了某种关系建立？满足了某种体验需求？商业化上对活跃/付费产生了某类作用？又或者是他存在着非常多的负面影响，对原有优雅的产品框架拖了后腿甚至造成破坏？</p>
+</blockquote>
+<p>让我们回到最初的定义：</p>
+<blockquote>
+<p>而所谓<strong>游戏系统</strong>，指的是<strong>游戏中由相互作用的若干条设计机制组成的、具有特定功能作用的有机整体</strong>。</p>
+</blockquote>
+<p><strong>“具有特定作用的有机整体”</strong>是定义中的关键。任何系统都是为了构建某个特定的玩法或者解决游戏中的问题而出现的。大家一开始做游戏的时候想必也会完全按照直觉来构建系统，觉得应该有什么就放什么。当然，这些直觉不能没有依据；特别是在特例中，一定呀考虑清楚系统发挥了什么作用、能创造怎样的玩法和体验。</p>
+<p><img src="/img/system/006.jpg"></p>
+<p>十三机兵防卫圈的思考云图，是一个<strong>信息收集和交互</strong>系统。它的作用非常直接和明显——存放玩家获取的信息，进行随时回放和提示；或是利用信息/道具和场景人物交互，推进剧情。相当于集成了galgame的回放和推进，是信息的<strong>物品栏</strong>。这在一个以叙事为主，信息量大的游戏中是一个很优秀的系统设计。</p>
+<br/>
+
+<h2 id="3-3结构"><a href="#3-3结构" class="headerlink" title="3.3结构"></a>3.3结构</h2><blockquote>
+<p>将系统内部结构拆出，系统内的子系统彼此间的关联或影响关系，系统内的资源流转关系，系统与外部的输入输出及输入输出相对接的系统玩法。</p>
+<p>——就像一张电路图或机械结构图，一图看清楚内部结构和运转规律。</p>
+</blockquote>
+<p><img src="/img/system/007.png"></p>
+<p>这是我很久之前做的《空洞骑士》依赖堆栈的拆解，可以发现，必须对游戏系统结构有一个清晰的认知，才能至少知道<strong>先做什么，后做什么</strong>，以及<strong>和其它系统有什么关系、关系有多大</strong>。按照这份堆栈，我发现，这类Metroidvania有一个特征是角色成长先行，即必须先设计角色能力的获取，再设计具体的地图，因为这关系到非常具体的流程控制。</p>
+<p>还有一个很有意思的地方，就是在《空洞骑士》的这个系统设计中，角色成长和养成都由道具栏显现，即成长和道具挂钩，是否需要做成这样也是应当在早期确定好的。</p>
+<br/>
+
+<h2 id="3-4资源投放"><a href="#3-4资源投放" class="headerlink" title="3.4资源投放"></a>3.4资源投放</h2><blockquote>
+<ol>
+<li><p>这个系统涉及了哪些资源/数据？</p>
+</li>
+<li><p>在这个系统中，玩家能够做出什么行为？</p>
+</li>
+<li><p>玩家的行为如何导致资源的流动？资源的流动又如何反向影响玩家的行为？</p>
+</li>
+</ol>
+</blockquote>
+<p><img src="/img/system/008.png"></p>
+<p>在长期运营的游戏中，系统往往需要承担资源进出的功能。如何平衡资源（经济、战斗等）使得整体资源系统不坍塌是一个必须在设计系统前思考的事情，这在MMORPG中往往显得比较复杂。其他游戏也需要经常在经济系统上考虑这些，拿《炉石传说》的战斗通行证举例，通行证能够提供哪些资源？提供多少？上限是多少？玩家获取速度如何？如何促进收费和平衡？这些都要结合定位和目的来看。</p>
+<p>其实除了经济系统，其它系统和资源投放也密切相关。再说《炉石传说》战斗系统中，法力水晶是一种资源、生命值是一种资源、随从也是资源、护甲也是资源……资源可以有很多种，而每一种都需要投入考虑。</p>
+<blockquote>
+<p>顺带一提，炉石的通行证绝对是我见过最傻逼的——游戏加入了通行证奖励反而还变少了。</p>
+</blockquote>
+<br/>
+
+<h2 id="3-5整体交互和概念包装"><a href="#3-5整体交互和概念包装" class="headerlink" title="3.5整体交互和概念包装"></a>3.5整体交互和概念包装</h2><blockquote>
+<p>系统的交互布局如何？主体焦点在哪里，信息区在哪里，操作区在哪里，与其他系统的交互布局是否统一？</p>
+<p>系统的交互路径如何？操作动线平滑且符合视觉与操作习惯？点击步骤尽可能少而便捷？前后界面的交互路径是连贯而无割离感？</p>
+<p>系统的交互体感如何？按键尺寸是否点击舒适，拖拽滑动的敏感性是否恰到好处，点击控件的声色形反应是否产生爽感？</p>
+<p>系统的交互辅助如何？信息文本是否清晰易读，图形信息是否易辨识无歧义，按钮与文字的视觉突出是否便于抓住重点或辅助决策，输入与输出的说明提示是否充分？</p>
+</blockquote>
+<p>系统交互其实是可以最后考虑的东西，它也可以和概念包装等放在一起，成为辅助营造预期体验的手段。它很重要，但是并不影响我们晚点考虑它，因为它并不会触及设计最底层的东西。</p>
+<p><img src="/img/system/009.jpg"></p>
+<p>《对马岛之魂》探索系统中的引路机制以一种极其优雅的方式交互——触摸板触发指引之风，最大化简化了UI，刚玩完《刺客信条：奥德赛》的我如沐春风，不再被惹眼的图标分散注意力，而是可以专心欣赏风景、骑马、赶路。</p>
+<p>《艾尔登法环》中也将使用类似的交互——黄金之风指引，可以预见将来的开放世界游戏更多地使用这类机制。</p>
+<br/>
+
+<br/>
+
+<p>了解完这些后，就可以按照这个思路拆解或者设计自己的系统了。在独立游戏团队中的全栈策划往往要独立进行整个游戏系统的架构，这是一个很好的机会来建立自己的系统堆栈并且加深其理解的机会。因为游戏系统往往是彼此联系，交错融合的，我们对系统进行设计时也需要反复检验，否则会忽略很多关联——因为最后无论如何，系统在整个制品面前，也只是一个有机的组合成员。</p>
+<hr>
+<br/>
+
+<br/>
+
+
+
+<h1 id="四、参考内容"><a href="#四、参考内容" class="headerlink" title="四、参考内容"></a>四、参考内容</h1><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/383704948">08. 游戏系统是什么 - 知乎</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/348422772">新手如何拆解游戏系统? - 知乎</a></p>
+<p><a target="_blank" rel="noopener" href="https://xw.qq.com/cmsid/20210927A0EZ0400?pgv_ref=baidutw">什么是游戏系统策划？【策划入门课程002】</a></p>
 
       </section>
 
@@ -183,12 +283,12 @@
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="/img/03.jpg"></div>
+      <div class="card-cover" background-image-lazy data-img="/img/07.jpg"></div>
     
     <div class="card-text">
       
-        <a href="/2021/10/28/%E6%B8%B8%E4%BA%BA02-%E8%94%9A%E8%93%9D%E7%A7%BB%E5%8A%A8%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">游人02-蔚蓝移动系统拆解</h2>
+        <a href="/2021/12/21/%E6%B8%B8%E4%BA%BA06-%E6%96%87%E6%A1%88%E6%96%B9%E5%90%91%E7%9A%84%E7%AD%96%E5%88%92%E5%8F%AF%E4%BB%A5%E7%9C%8B%E4%BA%9B%E4%BB%80%E4%B9%88%E4%B9%A6%EF%BC%9F/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">游人06-文案方向的策划可以看些什么书？</h2>
         </a>
       
       <div class="card-text--row">Newer</div>
@@ -200,12 +300,12 @@
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="/img/02.jpg"></div>
+      <div class="card-cover" background-image-lazy data-img="/img/05.jpg"></div>
     
     <div class="card-text">
       
-        <a href="/2021/10/26/Hello-Guys/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">Hello Guys！</h2>
+        <a href="/2021/11/24/%E6%B8%B8%E4%BA%BA04-%E5%9B%9B%E5%8D%81%E5%B0%8F%E6%97%B6%E5%A4%9A%E5%91%A8%E7%9B%AE%E7%8E%A9%E5%AE%B6%E5%AF%B9%E3%80%8A%E7%9B%90%E4%B8%8E%E9%81%BF%E9%9A%BE%E6%89%80%E3%80%8B%E6%96%87%E6%A1%88%E5%8F%99%E4%BA%8B%E6%9C%BA%E5%88%B6%E7%9A%84%E5%88%86%E6%9E%90/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">游人04-四十小时多周目玩家对《盐与避难所》文案叙事机制的分析</h2>
         </a>
       
       <div class="card-text--row">Older</div>
@@ -274,7 +374,7 @@
     <span>TOC</span>
   </div>
   <div class="widget-body">
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%8D%9A%E5%BC%88%E6%98%A0%E5%B0%84%E9%83%A8%E5%88%86"><span class="toc-number">1.</span> <span class="toc-text">1.博弈映射部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1%E5%8D%9A%E5%BC%88%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">1.1博弈概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E5%8D%9A%E5%BC%88%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 博弈流程分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3%E5%8D%9A%E5%BC%88%E8%B5%84%E6%BA%90%E6%8B%86%E8%A7%A3"><span class="toc-number">1.3.</span> <span class="toc-text">1.3博弈资源拆解</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%8A%A8%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3"><span class="toc-number">2.</span> <span class="toc-text">2.动作系统拆解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90"><span class="toc-number">2.1.</span> <span class="toc-text">2.1系统分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E5%8D%9A%E5%BC%88%E7%9A%84%E5%BE%AA%E7%8E%AF%E6%80%A7"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 博弈的循环性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3%E8%A1%8C%E4%B8%BA%E9%9B%86%E6%8B%86%E8%A7%A3%E5%8A%A8%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%85%83%E7%B4%A0%E5%AF%B9-%E5%AF%B9%E5%B1%80%E4%B8%AD%E7%9A%84%E5%85%8B%E5%88%B6%E5%85%B3%E7%B3%BB%E4%BA%A7%E7%94%9F%E5%B7%A8%E5%A4%A7%E5%BD%B1%E5%93%8D"><span class="toc-number">2.3.</span> <span class="toc-text">2.3行为集拆解动作系统元素对 对局中的克制关系产生巨大影响</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E4%BD%93%E9%AA%8C%E5%8F%8D%E6%80%9D"><span class="toc-number">3.</span> <span class="toc-text">3.体验反思</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1%E5%8D%9A%E5%BC%88%E6%9C%AC%E8%B4%A8"><span class="toc-number">3.1.</span> <span class="toc-text">3.1博弈本质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2%E5%8D%9A%E5%BC%88%E7%82%B9"><span class="toc-number">3.2.</span> <span class="toc-text">3.2博弈点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3%E5%A6%82%E4%BD%952d%E6%A0%BC%E6%96%97%E8%BD%AC3d%E6%A0%BC%E6%96%97%EF%BC%9F"><span class="toc-number">3.3.</span> <span class="toc-text">3.3如何2d格斗转3d格斗？</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1%E5%94%AF%E7%89%A9%E8%BE%A9%E8%AF%81%E7%9A%84%E8%A7%92%E5%BA%A6%EF%BC%88%EF%BC%9F%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">1.1唯物辩证的角度（？）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2%E7%8B%AD%E4%B9%89%E6%B8%B8%E6%88%8F%E7%B3%BB%E7%BB%9F"><span class="toc-number">2.</span> <span class="toc-text">1.2狭义游戏系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1%E5%AE%9A%E4%BD%8D"><span class="toc-number">3.</span> <span class="toc-text">3.1定位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2%E7%9B%AE%E7%9A%84%E5%92%8C%E4%BD%93%E9%AA%8C"><span class="toc-number">4.</span> <span class="toc-text">3.2目的和体验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3%E7%BB%93%E6%9E%84"><span class="toc-number">5.</span> <span class="toc-text">3.3结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4%E8%B5%84%E6%BA%90%E6%8A%95%E6%94%BE"><span class="toc-number">6.</span> <span class="toc-text">3.4资源投放</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5%E6%95%B4%E4%BD%93%E4%BA%A4%E4%BA%92%E5%92%8C%E6%A6%82%E5%BF%B5%E5%8C%85%E8%A3%85"><span class="toc-number">7.</span> <span class="toc-text">3.5整体交互和概念包装</span></a></li></ol>
   </div>
 </section>
 
