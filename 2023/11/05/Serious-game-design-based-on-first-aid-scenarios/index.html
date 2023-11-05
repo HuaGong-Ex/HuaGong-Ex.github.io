@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3367D6"/>
+  <link rel="apple-touch-icon" href="/icons-192.png">
+  <link rel="manifest" href="/manifest.json">
+  
+  <meta name="generator" content="Hexo 5.4.0">
+
+  
+    <meta name="description" content="So as long as you always maintain a sense of exploration,you will someday find the way out.">
+  
+
+  
+    <meta name="keywords" content="sssss">
+  
+
+  
+    <meta name="author" content="Game-Explorer">
+  
+
+  
+
+  
+
+  <title>Serious game design based on first aid scenarios | Moonblast 北島月炸</title>
+
+  
+
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/monokai.css">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+  <div class="root-container">
+    
+<!-- header container -->
+<header class="header-container post">
+  
+    <div class="post-image" style="background-image: url(/img/beaconcover.jpg)"></div>
+  
+
+  <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          Moonblast 北島月炸
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/">首页</a></li>
+        
+          <li class="navbar-list-item"><a target="_blank" rel="noopener" href="https://binnnop.github.io/2021/10/26/%E8%8F%AF%E5%B7%A5%E6%96%B0%E5%82%B3%E6%92%AD%E5%AD%B8%E7%B3%BB%E5%8F%8B%E9%8F%88/">友链</a></li>
+        
+          <li class="navbar-list-item"><a href="https://huagong-ex.github.io/2021/10/26/Hello-Guys/">关于</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">Serious game design based on first aid scenarios</h1>
+          <h2 class="title-sub-wrap">
+            <strong>Game-Explorer</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2023-11-05T09:27:45.000Z" itemprop="datePublished">2023-11-05</time>
+          </h2>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/categories/Game/">📒 Game</a></li>
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/tags/Serious-Game/">🏷️ Serious Game</a></li>
+  
+</ul>
+        </div>
+      </div>
+    </div>
+  
+
+  
+  
+  
+</header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+<div class="body-container">
+  <article class="content-container layout-block post-container">
+    <div class="article-info">
+      
+      
+      
+      
+      <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
+        <h1 id="Serious-Game-Design-Based-on-First-Aid-Theme"><a href="#Serious-Game-Design-Based-on-First-Aid-Theme" class="headerlink" title="Serious Game Design Based on First Aid Theme"></a>Serious Game Design Based on First Aid Theme</h1><h1 id="I-Abstract"><a href="#I-Abstract" class="headerlink" title="I. Abstract"></a>I. Abstract</h1><p>The purpose of this paper is to study the development of serious games and try to design a serious game. The concept of serious game was proposed by educational and sociologist Clark.C.Albert in 1970, and its kernel extension as well as application has been developed in the 21st century. This paper adopts a problem-based design approach to develop serious games by summarizing relevant theories and using the Unity engine as the core tool. This paper summarizes the development history of the concept of serious games at home and abroad, and finds that there is a lack of serious games with the background of medical topics in China. Therefore, this paper designs a serious game in which the audience plays the role of a 120 dispatcher through the waterfall development method, so as to popularize the related emergency knowledge.</p>
+<h1 id="II-The-background-of-the-selected-topic"><a href="#II-The-background-of-the-selected-topic" class="headerlink" title="II.The background of the selected topic"></a>II.The background of the selected topic</h1><p>Serious Games (SG) refers to games that are not played for the primary purpose of entertainment, enjoyment or fun. The term appeared in 1970 in a book of the same name by educational and sociologist Clark.C.Albert, which states that “Serious games can be serious or casual. The significance of our focus on serious games is that they have a clear, carefully thought-out educational purpose and are not used primarily for entertainment. This does not mean that serious games are not entertaining, nor should they be1.” And in 2002, Ben Sawyer published a white paper, Serious Games: Improving Public Policy through Game-Based Learning and Simulation, calling for the use of technology and knowledge from the entertainment video game industry to improve the behavior of public organizations that simulate the real world in a game framework. In the same year, America’s Army, a game designed by Redstone Arsenal’s Army Game Studio to encourage youth to join the military, was released, sparking widespread discussion in the industry, and these two landmark events made 2002 the beginning of the modern wave of serious games.2 However, so far, serious games have not been recognized by academics as the most important game in the world.</p>
+<p>But so far, serious games do not have a strict definition in the academic world, different researchers and developers do not understand and define serious games in exactly the same way, and the more widely recognized essential feature at present is games that do not aim at entertainment. ② Serious games, as a branch of video games, should be able to have a certain educational ability, while retaining the characteristics of video games, so that the audience to acquire a certain skill or obtain certain knowledge.</p>
+<h1 id="III-Significance-of-the-selection"><a href="#III-Significance-of-the-selection" class="headerlink" title="III. Significance of the selection"></a>III. Significance of the selection</h1><p>First of all, Serious Games is not a game of pure entertainment. Serious Games research is an interdisciplinary field involving game design, education, psychology, communication and other aspects. With the development of computer technology, serious games are gradually expanding from the military field to other fields, such as health care, education and corporate training. The genres of serious games are very diverse, including simulation games, role-playing games, strategy games, and puzzle games. In addition, they can also be used on different platforms, such as computers, cell phones, tablets and virtual reality devices.<br>Currently, there is no strict definition of serious games in China and there is a lack of serious game works. In terms of definition, Li Fangli, in her research, classifies functional games into “strong functional games” and “weak functional games” according to the different coordinate scales of “entertainment-functionality”. “Weak Function Games”. Weak function games are more inclined to entertainment, more indirectly related to real problems, and achieve the purpose of improving general knowledge and cultivating sentiment through subtle ways. Functional games in the above definition are related to serious games, and the common feature of both is that they have the design purpose of improving the general knowledge of the audience3 .<br>Based on the above and related literature, this report tries to propose and create a serious game with a 120 emergency center dispatcher as the game character, in which the audience will answer the phone calls, reply to the messages in time, and save different patients in the city. An attempt to inject fresh blood into serious games in the country.</p>
+<h1 id="IV-Content-of-the-game"><a href="#IV-Content-of-the-game" class="headerlink" title="IV. Content of the game:"></a>IV. Content of the game:</h1><h2 id="i-Introduction-of-the-case"><a href="#i-Introduction-of-the-case" class="headerlink" title="(i) Introduction of the case"></a>(i) Introduction of the case</h2><p>The socio-educational significance of serious games has always been in the spotlight; Alessandro De Gloria et al. found that serious games are designed to provide engaging, motivating, and effective vehicles to improve the learning process, and that their engaging plots and interactions offer the pedagogical potential of efficiently acquiring and validating knowledge and skills in the audience.4 Wouters et al. experimentally demonstrated that serious games can improve learning by altering cognitive processes and influencing motivation. Wouters and other researchers have experimentally demonstrated that serious games can enhance learning by altering cognitive processes and influencing motivation.5 In China, Tang, Jinyu, and Zhu, have shown that serious games can improve learning by altering cognitive processes and influencing motivation.<br>Domestically, Tang Jinyu and Zhu Xuefang, in their study on serious games and digital non-genetic inheritance, also pointed out that serious games have the advantages of communication and cooperation mechanism, trial and error and immediate feedback mechanism, visual expression of information, interactivity and entertainment, which enable users to change from passive to active in receiving information and creating knowledge.6 In addition, old science and technology workers at Tsinghua University have shown that serious games can enhance learning through altering cognitive processes and influencing learning motivation through experiments.<br>In addition, the Association of Elderly Science and Technology Workers of Tsinghua University introduced the concept of medical and health serious games earlier in China and designed a series of works. Medical health serious game is the combination of virtual reality technology and medical technology to dissolve into the electronic game system, to realize convenient and natural human-computer interaction and realistic experience, so that it may achieve the purpose of assisting the treatment of diseases. This series of software treatment cost cheap, efficacy, the use of non-invasive intervention therapy, no obvious side effects, at home and abroad are in a leading position in technology, with great prospects for development . However, there is still a lack of serious games with the background of first aid in China, so this report also tries to design a serious game with the relevant background.</p>
+<p>Raph Koster mentioned in “The Way to Happy Game Design” that the human brain is a marvelous pattern recognition machine, and we are good at discovering hidden patterns . Life Beacon removes the mouse from the operation level, i.e., the audience understands the core operation of the game through the button prompts before entering the game. Serious games actually face a number of challenges in their development: the first challenge is how to examine the reasonableness of the topic selection, followed by how to integrate educational themes and objectives into serious games once they have been determined so that they are both entertaining and serve an educational purpose, and how to assess the effectiveness of the learning as well as the fun of the game is another key issue to be solved for serious games.</p>
+<h2 id="ii-Game-Setting-and-Operation"><a href="#ii-Game-Setting-and-Operation" class="headerlink" title="(ii) Game Setting and Operation"></a>(ii) Game Setting and Operation</h2><p>The game designed for this report is called “Life Beacon”, in which the audience plays the role of a 120 operator, answering calls and selecting the correct dialog options through key combinations. There is a time limit for each missed call, which challenges the audience’s quick response. At the same time, the audience needs to screen out nuisance calls and hang up immediately to respond to other emergency calls, and in addition, the audience needs to have a certain degree of knowledge about first aid in order to deliver an effective message before the ambulance arrives. Through this game, the audience can empathize with the 120 operators, experience the urgency of their work, and learn about medical emergencies in the process of answering calls over and over again. The audience needs to answer as many emergency calls as possible within the time constraints to cope with different accidents and increase the value of life. If the audience answers the phone negatively, gives wrong answers or refuses to answer the phone, their life value will be reduced and the game will end prematurely.<br>In order to lower the threshold of the game and reduce the learning cost of the audience, Life Beacon chooses simple QTE (Quick Time Event) and story reading comprehension as the core gameplay, which only requires four arrow keys from up, down, left, right and right from entering the game to actual operation.</p>
+<p><img src="/img/beacon.png"></p>
+<h2 id="iii-Design-objectives"><a href="#iii-Design-objectives" class="headerlink" title="(iii) Design objectives"></a>(iii) Design objectives</h2><p>During the gameplay of Life Beacon, the audience needs to have a certain level of comprehension of the phone text as well as sufficient knowledge of first aid. Misdirection of the patient by the audience can cost the audience a significant amount of life value, and tangling with nuisance calls can waste a significant amount of time. Because of this feedback, the effectiveness of learning is tied to the goal of the game, as the amount of time the audience persists in the game depends, in part, on his mastery of the knowledge.<br>Beacon of Life’s educational attributes distinguish it from the technical training field of conventional serious games, which tends to be public service in nature. Life Beacon not only publicizes and popularizes the knowledge in this field to fill the knowledge gap of the general public, but also raises the public’s respect for medical workers.<br>The following is an emergency call in the game with the background of “gas poisoning”:</p>
+<blockquote>
+<p>Male: Hoo, hoo, hoo.<br>Operator: This is 120 Dispatch.<br>Operator: What’s wrong with you, where are you uncomfortable?<br>Male: I’m not in pain anywhere, but I have no energy.<br>Operator: It doesn’t hurt, it’s just no energy.<br>Operator: Did you leave the gas stove on at home?<br>Male: The gas stove, yes, the gas stove seems to be off, I can’t move, doctor, help me.<br>Operator: Can you still move?<br>Male: I can’t, my house is on the first floor of the sixth building in the Golden Dawn neighborhood, the light is on, you guys come quickly, I can’t open my eyes, I’m sleepy.<br>Operator: Don’t fall asleep! Push the window open!<br>Male: I can’t get up, I can’t get up, help me, you guys come quickly.<br>Operator: Get your cell phone and break the window! We’re on our way. The ambulance will only take five minutes!</p>
+</blockquote>
+<h2 id="iv-Technical-principles"><a href="#iv-Technical-principles" class="headerlink" title="(iv) Technical principles"></a>(iv) Technical principles</h2><ol>
+<li><p>Tools used<br>The tools used for the development of this report include a variety of types of tools, the following will focus on Unity, Spine, Blender:</p>
+<ul>
+<li>Unity: Unity is a cross-platform game engine software, which can be used to develop various types of games, including PC games, mobile games, virtual reality and augmented reality games, etc. Unity provides a series of tools and resources, such as graphic editors, audio editors, animation editors, physics engines, scripting engines, etc., which make game development easier.</li>
+<li>Spine: Spine is a popular skeletal animation software for creating 2D animations.Spine provides a variety of skeletal and animation editing tools that allow users to easily create a variety of 2D animations and interactive effects.</li>
+<li>Blender: Blender is an open source 3D computer graphics software for creating, editing and rendering 3D images and animations. blender provides a variety of modeling, animation, rendering and compositing tools that allow users to easily create a variety of complex 3D images and animations.<br>And these development resources mentioned above we use BR (Beyond Compare) for resource consolidation and management.</li>
+</ul>
+</li>
+<li><p>Design process<br>The members of this report group used xml language to write a large number of dialog texts in the game, and each event tag was inserted with a piece of dialog and numbered to facilitate direct configuration. In addition, the members in charge of the program were divided into two parts: one was in charge of the table guide, dealing with the logic of the events, and determining the win/loss conditions and the current state of the audience, while the other student, as the “front-end” developer, dealt with the visual effects of the audience interactions, as well as the position and animation state of the elements of the main interface of the game.<br>In practice, many events can enter the same ending branch, including the plot branch and the impact branch (affecting the audience’s life value, news broadcasting), which saves a lot of text volume and development time. After further iterations, the text tool evolved into a fixed number of templates, which can be selected according to the importance of the plot, eliminating the need for separate designs.</p>
+</li>
+<li><p>Code examples</p>
+<p><img src="/img/beacon_1.png"></p>
+<p><img src="/img/beacon_2.png"></p>
+<p><img src="/img/beacon_3.png"></p>
+</li>
+</ol>
+<h1 id="V-Outlook"><a href="#V-Outlook" class="headerlink" title="V. Outlook"></a>V. Outlook</h1><p>The following are several expansion programs:</p>
+<ol>
+<li>Multi-perspective design<br>The audience plays the role of an operator in Life Beacon and learns about medical knowledge through the perspective of other people’s information. The game design will subsequently consider the introduction of the patient’s perspective, so that the audience from different perspectives in-depth access to medical information.</li>
+<li>System Text Expansion and Customization<br>In addition to first aid wiring knowledge, other medical system text information can also be imported through the xml file for data processing, to assist people to understand the relevant information, such as the hazards of traditional cigarettes on human health, etc., with electronic form of presentation and knowledge sorting.</li>
+<li>Navigation system<br>In the traditional medical wiring, the patient - operator —- ambulance attendance is a secondary communication relationship, from the patient’s mouth to obtain the residential address information and then by the operator to spread to the attendance staff, if the navigation system is introduced into the auxiliary wiring system, in the dialogue can be prefabricated in advance of the residential address, to achieve the direct dissemination of the attendance staff and the patient between.</li>
+</ol>
+<p>From the perspective of education and dissemination, this game has a very wide application prospect, which can be used for the learning and dissemination of medical rescue and first aid knowledge, and helps to improve people’s medical rescue skills and emergency treatment ability, thus reducing the losses caused by accidents and disasters. Moreover, with the development of society and the improvement of people’s health awareness, the demand for this kind of educational game will become greater and greater.</p>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><p>[1]Abt, Clark C. Serious Games. New York: Viking, 1970, 176 pp., $5.95, L.C. 79-83234[J]. Sage Publications, 1970, 14(1): 129-129.</p>
+<p>[2]Djaouti Damien,Alvarez Julian,Jessel Jean-Pierre,等. Springer London[M]. London: Springer London, 2011: 25-43.</p>
+<p>[3] Abt C C. Serious games[J]. 1970. </p>
+<p>[4]Gloria Alessandro-De,Bellotti Francesco,Berta Riccardo. Serious Games for education and training[J]. Serious Games Society, 2014, 1(1)</p>
+<p>[5]Pieter Wouters,Christof van Nimwegen,Herre van Oostendorp, et al. A meta-analysis of the cognitive and motivational effects of serious games.[J]. American Psychological Association (apa), 2013, 105(2): 249-265.</p>
+<p>[6]汤金羽,朱学芳. 数字非遗传承中严肃游戏项目开发与应用探讨[J]. 图书情报工作, 2020, 64(10): 35-45</p>
+<p>[7]清华大学老科学技术工作者协会：，《医学健康严肃游戏》，2017年4月1日，<a target="_blank" rel="noopener" href="http://www.rsta.tsinghua.edu.cn/zh/detail.aspx?id=436%EF%BC%8C2023%E5%B9%B42%E6%9C%8825%E6%97%A5%E3%80%82">http://www.rsta.tsinghua.edu.cn/zh/detail.aspx?id=436，2023年2月25日。</a></p>
+<p>[8]〔美〕科斯特：《游戏设计快乐之道》，北京：人民邮电出版社，2013年，第13页。</p>
+<p>[9]魏迎梅:《严肃游戏在教育中的应用与挑战》，《电化教育研究》,2011年第4期，88-90页。</p>
+
+      </section>
+
+      
+      
+        <nav class="article-nav">
+          
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="/img/06.jpg"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2021/12/21/%E6%B8%B8%E6%88%8F%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">Research - Game System Overview</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
+
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+
+  
+  
+
+
+      </section>
+    </div>
+    <div class="widget-info">
+      <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-body">
+    
+      <img src="/archives/image/01.jpg" class="soft-size--round soft-style--box" alt="華工新傳播學系">
+    
+    
+      <h2>華工新傳播學系</h2>
+    
+    
+      <p>最初的痕迹，从这里开始吧</p>
+    
+
+    <div class="count-box">
+      <div class="count-box--item">
+        <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
+</svg>
+        <span>5</span>
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+        2
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+        3
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+<section class="widget-toc widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-toc" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M134.50666666 767.46666668H460.8c27.73333333 0 50.24000001 22.50666668 50.24000001 50.23999999v50.13333333c0 27.73333333-22.50666668 50.24000001-50.24000001 50.24000001H134.50666666c-27.73333333 0-50.24000001-22.50666668-50.23999999-50.24000001v-50.13333333c0.10666668-27.73333333 22.50666668-50.24000001 50.24000001-50.24000001zM84.37333332 541.65333333h326.18666669c27.73333333 0 50.24000001 22.39999999 50.23999999 50.13333334v50.24000001c0 27.73333333-22.50666668 50.24000001-50.24000002 50.23999999H84.37333332c-27.73333333 0-50.24000001-22.50666668-50.23999999-50.23999999v-50.24000001c0-27.73333333 22.50666668-50.13333334 50.24000001-50.13333334zM134.50666666 315.83999999H460.8c27.73333333 0 50.24000001 22.50666668 50.24000001 50.24000001v50.24000001c0 27.73333333-22.50666668 50.13333334-50.24000001 50.13333333H134.50666666c-27.73333333 0-50.24000001-22.39999999-50.23999999-50.13333333v-50.24000001c0.10666668-27.84000001 22.50666668-50.24000001 50.24000001-50.23999999zM209.81333332 89.91999999h326.18666671c27.73333333 0 50.24000001 22.39999999 50.23999997 50.13333335v50.23999999c0 27.73333333-22.50666668 50.24000001-50.24000001 50.24000001H209.81333332c-27.73333333 0-50.24000001-22.50666668-50.23999999-50.24000001v-50.24000001c0-27.73333333 22.50666668-50.13333334 50.24000001-50.13333333zM692.05333333 623.36l274.66666669 176.00000002c23.36000001 14.93333333 30.08 45.97333334 15.14666666 69.33333332L954.77333334 910.93333333c-14.93333333 23.25333334-45.97333334 30.08-69.33333335 15.14666667l-274.66666666-176c-23.36000001-14.93333333-30.08-45.97333334-15.14666667-69.33333333l27.09333334-42.24000001c14.93333333-23.36000001 46.08000001-30.08 69.33333333-15.14666666z" fill="currentColor"></path>
+</svg>
+    <span>TOC</span>
+  </div>
+  <div class="widget-body">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#i-Introduction-of-the-case"><span class="toc-number">1.</span> <span class="toc-text">(i) Introduction of the case</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ii-Game-Setting-and-Operation"><span class="toc-number">2.</span> <span class="toc-text">(ii) Game Setting and Operation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#iii-Design-objectives"><span class="toc-number">3.</span> <span class="toc-text">(iii) Design objectives</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#iv-Technical-principles"><span class="toc-number">4.</span> <span class="toc-text">(iv) Technical principles</span></a></li></ol>
+  </div>
+</section>
+
+
+      
+<section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-notice" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M512 945.02305225v28.15620663a24.27259221 24.27259221 0 0 1-24.27259221 24.27259335H394.0352a48.54518557 48.54518557 0 0 1-41.74885888-23.78714112l-110.68302222-184.47170332a132.04290333 132.04290333 0 0 1-17.47626667-48.54518557h118.4502511a200.97706667 200.97706667 0 0 1 76.21594113 14.56355556l20.38897777 133.49925888a48.54518557 48.54518557 0 0 0 36.40888888 27.67075555l16.01991111 2.91271112a24.27259221 24.27259221 0 0 1 20.38897778 25.72894889zM997.45185223 463.45481443a194.18074112 194.18074112 0 0 1-38.8361489 116.50844445 24.75804445 24.75804445 0 0 1-36.4088889 0l-34.95253333-34.95253333a24.27259221 24.27259221 0 0 1-2.91271111-30.58346667 97.09036999 97.09036999 0 0 0 0-106.79940665 24.27259221 24.27259221 0 0 1 2.91271111-30.58346666l34.95253333-34.95253334a24.75804445 24.75804445 0 0 1 18.93262223-7.28177777 26.2144 26.2144 0 0 1 17.47626667 9.70903665A194.18074112 194.18074112 0 0 1 997.45185223 463.45481443z m-194.18074112-388.36148111v776.72296335a48.54518557 48.54518557 0 0 1-48.54518556 48.54518443h-28.64165888a48.54518557 48.54518557 0 0 1-33.98163001-14.07810332l-145.63555556-143.20829668A291.27111111 291.27111111 0 0 0 342.57730333 657.63555556H172.18370333a145.63555556 145.63555556 0 0 1-145.63555556-145.63555556v-97.09036999a145.63555556 145.63555556 0 0 1 145.63555556-145.63555556h170.3936a291.27111111 291.27111111 0 0 0 206.31703779-85.43952668l145.63555555-143.20829554a48.54518557 48.54518557 0 0 1 33.98162888-14.07810446H754.72592555a48.54518557 48.54518557 0 0 1 48.54518556 48.54518555z" fill="currentColor"></path>
+</svg>
+    <span>NOTICE</span>
+  </div>
+  <div class="widget-body">
+    <p>12月没有项目捏(✪ω✪)</p>
+  </div>
+</section>
+
+
+      <section class="widget-categorys widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+    <span>CATEGORYS</span>
+  </div>
+  <div class="widget-body">
+    <ul class="categorys-list">
+      
+        <li class="categorys-list-item">
+          <a href="/categories/Research/">
+            Research (3)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/Game/">
+            Game (1)
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</section>
+
+      <section class="widget-tags widget-item  layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+    <span>TAGS</span>
+  </div>
+  <div class="widget-body">
+    <div class="tags-cloud">
+      <a href="/tags/Research/" style="font-size: 20px;" class="tags-cloud-10">Research</a> <a href="/tags/Serious-Game/" style="font-size: 10px;" class="tags-cloud-0">Serious Game</a> <a href="/tags/design-analysis/" style="font-size: 10px;" class="tags-cloud-0">design analysis</a>
+    </div>
+  </div>
+</section>
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    
+    <div class="social-icons">
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="https://github.com/miiiku/" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-github" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64.6 512c0 195.6 125.4 361.9 300.1 422.9 23.5 5.9 19.9-10.8 19.9-22.2v-77.6c-135.8 15.9-141.3-74-150.5-89-18.5-31.5-61.9-39.5-49-54.5 31-15.9 62.5 4 98.9 58 26.4 39.1 77.9 32.5 104.1 26 5.7-23.5 17.9-44.5 34.7-60.9-140.7-25.2-199.4-111.1-199.4-213.3 0-49.5 16.4-95.1 48.4-131.8-20.4-60.6 1.9-112.4 4.9-120.1 58.2-5.2 118.5 41.6 123.3 45.3 33.1-8.9 70.8-13.7 112.9-13.7 42.4 0 80.3 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.4-43.9 2.9 7.7 24.7 58.3 5.5 118.1 32.5 36.8 49 82.8 49 132.4 0 102.3-59 188.3-200.2 213.2 23.5 23.3 38.1 55.5 38.1 91.1v112.7c0.8 9 0 17.9 15.1 17.9C832.7 877 960.4 709.4 960.4 512.1c0-247.5-200.6-447.9-447.9-447.9C265 64.1 64.6 264.5 64.6 512z"></path>
+</svg>
+          </a>
+        
+      
+        
+          <a href="https://twitter.com/guanquanhong" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-twitter" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M962.285714 233.142857q-38.285714 56-92.571429 95.428571 0.571429 8 0.571429 24 0 74.285714-21.714286 148.285714t-66 142-105.428571 120.285714-147.428571 83.428571-184.571429 31.142857q-154.857143 0-283.428571-82.857143 20 2.285714 44.571429 2.285714 128.571429 0 229.142857-78.857143-60-1.142857-107.428571-36.857143t-65.142857-91.142857q18.857143 2.857143 34.857143 2.857143 24.571429 0 48.571429-6.285714-64-13.142857-106-63.714286t-42-117.428571l0-2.285714q38.857143 21.714286 83.428571 23.428571-37.714286-25.142857-60-65.714286t-22.285714-88q0-50.285714 25.142857-93.142857 69.142857 85.142857 168.285714 136.285714t212.285714 56.857143q-4.571429-21.714286-4.571429-42.285714 0-76.571429 54-130.571429t130.571429-54q80 0 134.857143 58.285714 62.285714-12 117.142857-44.571429-21.142857 65.714286-81.142857 101.714286 53.142857-5.714286 106.285714-28.571429z"></path>
+</svg>
+          </a>
+        
+      
+    </div>
+     
+    <p>&copy; 2023 <a href="/" target="_blank">Game-Explorer</a></p>
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
+
+    <p>
+      <a href="javascript:;" id="theme-light">🌞 浅色</a>
+      <a href="javascript:;" id="theme-dark">🌛 深色</a>
+      <a href="javascript:;" id="theme-auto">🤖️ 自动</a>
+    </p>
+  </div>
+</footer>
+  </div>
+
+  <div class="back-to-top-fixed soft-size--round soft-style--box">
+    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+      <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+      <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+    </svg>
+  </div>
+
+  
+  <!-- aplayer -->
+
+
+<!-- dplayer -->
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+</body>
+</html>
