@@ -19,14 +19,14 @@
   
 
   
-    <meta name="author" content="HuaGong-Explorer">
+    <meta name="author" content="Game-Explorer">
   
 
   
 
   
 
-  <title>游人02-蔚蓝移动系统拆解 | 華工新傳播學系</title>
+  <title>游人02-蔚蓝移动系统拆解 | Moonblast 北島月炸</title>
 
   
 
@@ -59,7 +59,7 @@
     <div class="navbar-logo">
       <a href="/">
         
-          華工新傳播學系
+          Moonblast 北島月炸
         
       </a>
     </div>
@@ -102,7 +102,7 @@
         <div class="layout-margin">
           <h1 class="title-wrap">游人02-蔚蓝移动系统拆解</h1>
           <h2 class="title-sub-wrap">
-            <strong>HuaGong-Explorer</strong>
+            <strong>Game-Explorer</strong>
             <span>发布于</span>
             <time  class="article-date" datetime="2021-10-28T07:25:07.000Z" itemprop="datePublished">2021-10-28</time>
           </h2>
@@ -142,23 +142,23 @@
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
         <blockquote>
-<p>一句话来评价《蔚蓝》的移动体验：手感（控制感）极佳，角色灵动十足，反馈带劲，关卡节奏优秀。</p>
+<p>One word on Celeste’s moving experience: excellent feel (control), character dexterity, energizing feedback, and excellent level pacing.</p>
 </blockquote>
-<h1 id="1-分析移动特点"><a href="#1-分析移动特点" class="headerlink" title="1.分析移动特点"></a>1.分析移动特点</h1><h2 id="1-1资源管理"><a href="#1-1资源管理" class="headerlink" title="1.1资源管理"></a>1.1资源管理</h2><p>基于资源管理的解谜是蔚蓝的一大特色。</p>
-<p>在前期，资源由固定攀爬精力+二段跳跃机会+关卡资源（如绿色水晶补充跳跃机会）组成。</p>
-<p>玩家需要对自身的资源进行管理，并收集地图资源，从而规划过关路径。</p>
-<p>这样的资源管理式解谜并不是只有唯一解，其关卡设计很好的契合了这一移动特性，通常有较多的路径选择。</p>
-<p>后续加入三段跳，实际是全局上增加了固定资源，为复杂关卡搭建提供基础。</p>
-<h2 id="1-2包容性"><a href="#1-2包容性" class="headerlink" title="1.2包容性"></a>1.2包容性</h2><p>包容性主要体现在一些细节机制上，如：跳跃预输入；边角修正；非严格操作（蹬墙跳）。</p>
-<p>落地前提前按跳跃，会在落地瞬间起跳。（预输入）</p>
-<p>蹬墙跳不必贴墙，只需距离2像素。（非严格输入）</p>
-<p>冲刺时会避开障碍，自动修正位置。（边角修正）</p>
-<p>这些机制具有极强的包容性，虽然看起来并不严格，但优化了玩家的手感，在体验上增添流畅。后面会具体提到其中一些机制。</p>
-<h2 id="1-3-关卡节奏优秀"><a href="#1-3-关卡节奏优秀" class="headerlink" title="1.3 关卡节奏优秀"></a>1.3 关卡节奏优秀</h2><p>《蔚蓝》的关卡较为简短，在这个极小的关卡空间内，能够利用已有的移动机制动态地控制关卡节奏，是其特殊之处。</p>
-<p>控制关卡节奏，主要在于冲刺点补充道具（绿色钻石，果冻墙、泡泡）的投放，以及攀爬机制制造的临时安全区（落地前动作做到一半的缓冲）。游玩体验是：停下来规划路线，进行一次快节奏的位移，这中途还可以根据玩家水平和熟练度灵活控制缓冲时间。然后再停下来循环进入一个路线的规划阶段，整体松弛有度。</p>
+<h1 id="1-Analyze-moving-features"><a href="#1-Analyze-moving-features" class="headerlink" title="1. Analyze moving features"></a>1. Analyze moving features</h1><h2 id="1-1-Resource-Management"><a href="#1-1-Resource-Management" class="headerlink" title="1.1 Resource Management"></a>1.1 Resource Management</h2><p>Puzzle solving based on resource management is a major feature of Celeste.</p>
+<p>In the early stage, resources consist of fixed climbing energy + two jump opportunities + level resources (such as green crystals to replenish jump opportunities).</p>
+<p>Players need to manage their own resources and collect map resources to plan the path through the level.</p>
+<p>Such resource management style puzzles are not the only ones to solve, and their level design fits this mobile feature well, usually with more path options.</p>
+<p>The subsequent addition of triple jumps actually adds fixed resources globally, providing the basis for complex level building.</p>
+<h2 id="1-2-Inclusivity"><a href="#1-2-Inclusivity" class="headerlink" title="1.2 Inclusivity"></a>1.2 Inclusivity</h2><p>Inclusivity is mainly reflected in some detailed mechanics, such as: jump pre-input; edge correction; and non-strict maneuvers (stomping wall jumps).</p>
+<p>Pressing jump in advance before landing will result in a jump at the moment of landing. (Pre-input)</p>
+<p>Stomp wall jumps don’t have to be against a wall, only 2 pixels away. (Non-strict input)</p>
+<p>Sprinting will avoid obstacles and automatically correct your position. (Edge correction)</p>
+<p>These mechanics are extremely inclusive, and while they may not seem strict, they optimize the feel of the player and add smoothness to the experience. Some of these mechanisms will be mentioned specifically later.</p>
+<h2 id="1-3-Excellent-level-pacing"><a href="#1-3-Excellent-level-pacing" class="headerlink" title="1.3 Excellent level pacing"></a>1.3 Excellent level pacing</h2><p>Celeste’s levels are relatively short, and the ability to dynamically control the pacing of the levels using the existing movement mechanics within this very small level space is what makes it so special.</p>
+<p>The control of the level’s pacing is mainly due to the placement of sprint point refills (green diamonds, jelly walls, bubbles) and the temporary safety zones created by the climbing mechanic (a cushion halfway through a move before landing). The playing experience is: stop and plan a route for a fast-paced displacement, which can also be flexibly controlled according to the player’s level and proficiency in the buffer time. Then stop again to cycle into a route planning stage, the overall slack.</p>
 <br/>
 
-<h1 id="2-量化拆帧"><a href="#2-量化拆帧" class="headerlink" title="2.量化拆帧"></a>2.量化拆帧</h1><h2 id="2-1-角色移动机制"><a href="#2-1-角色移动机制" class="headerlink" title="2.1 角色移动机制"></a>2.1 角色移动机制</h2><p><img src="/img/celeste/s1.png"></p>
+<h1 id="2-Quantify-frame-splitting"><a href="#2-Quantify-frame-splitting" class="headerlink" title="2.Quantify frame splitting"></a>2.Quantify frame splitting</h1><h2 id="2-1-Character-movement-mechanism"><a href="#2-1-Character-movement-mechanism" class="headerlink" title="2.1 Character movement mechanism"></a>2.1 Character movement mechanism</h2><p><img src="/img/celeste/s1.png"></p>
 <p><img src="/img/celeste/s2.png"></p>
 <p><img src="/img/celeste/0001.png"></p>
 <p><img src="/img/celeste/0002.png"></p>
@@ -176,36 +176,36 @@
 <p><img src="/img/celeste/0014.png"></p>
 <p><img src="/img/celeste/0015.png"></p>
 <p><img src="/img/celeste/0016.png"></p>
-<h2 id="2-2动作帧数设计模式"><a href="#2-2动作帧数设计模式" class="headerlink" title="2.2动作帧数设计模式"></a>2.2动作帧数设计模式</h2><p>通过拆解奔跑、跳跃以及冲刺的具体帧数，可以窥见其背后的设计模式。这套平台跳跃动作没有基于引擎自带的物理系统进行设计，也很少重视人物运动的真实感，反而以玩家体验恰当的手感为重，运动参数都经过开发调试（控制Player的脚本多达5471行）。</p>
-<p>在拆解时，我们可以很清楚地将动作拆分为一系列的“阶段”，即一个简单的动作由几个“阶段性动画”组成。这样的设计有利于在开发时灵活地调节，并为玩家在一个动作内寻找“阶段”的关键节点提供了微操的上限，可把玩度极强。</p>
+<h2 id="2-2Motion-Frames-Design-Pattern"><a href="#2-2Motion-Frames-Design-Pattern" class="headerlink" title="2.2Motion Frames Design Pattern"></a>2.2Motion Frames Design Pattern</h2><p>By disassembling the specific frame rates for running, jumping, and sprinting, you can get a glimpse of the design model behind it. The platforming jumps were not designed based on the engine’s own physics system, and little attention was paid to the realism of the character’s movements. Instead, they were designed to feel right in the hands of the player, and the parameters of the movements were developed and debugged (5,471 lines of script were used to control the Player).</p>
+<p>When disassembling the game, we can clearly divide the movement into a series of “stages”, i.e. a simple movement is composed of several “stage animations”. This design facilitates flexible adjustment during development, and provides the player with an upper limit of fine-tuning to find the key nodes of the “stages” within a single action, making it highly playable.</p>
 <br/>
 
-<h1 id="3-延申玩法"><a href="#3-延申玩法" class="headerlink" title="3.延申玩法"></a>3.延申玩法</h1><h2 id="3-1跑跳"><a href="#3-1跑跳" class="headerlink" title="3.1跑跳"></a>3.1跑跳</h2><p>通过逐帧暴力抠图，可得下图，即最大限度跑跳的曲线，距离约5.5个身位，曲线平滑。</p>
-<h2 id="3-2-预输入跳跃"><a href="#3-2-预输入跳跃" class="headerlink" title="3.2 预输入跳跃"></a>3.2 预输入跳跃</h2><p>跳跃预输入实现了动作的无缝衔接，允许玩家进行一个连续的落地跳跃（通常伴随着x轴的大幅位移），不严格要求玩家落地，保证了连贯流畅的手感；具有包容性，手残玩家也可以体会到凌波微步的快乐。</p>
-<h2 id="3-3-蹬墙跳"><a href="#3-3-蹬墙跳" class="headerlink" title="3.3 蹬墙跳"></a>3.3 蹬墙跳</h2><p>这个机制是依附于场景而出现的，且并不需要严格贴墙（&lt;2像素即可），具有包容性。制造出一种流畅自如，施展轻功的爽快手感。</p>
-<h2 id="3-4-狼跳"><a href="#3-4-狼跳" class="headerlink" title="3.4 狼跳"></a>3.4 狼跳</h2><p>狼跳，指离开地面几帧还可以进行跳跃操作。</p>
-<p>可以理解是为了包容玩家操作而设计的机制，而这也衍生出了更高的操作上限，让速通玩家有了可利用的机制（甚至延伸出挨跳刺）。</p>
-<h2 id="3-5-攀爬行为"><a href="#3-5-攀爬行为" class="headerlink" title="3.5 攀爬行为"></a>3.5 攀爬行为</h2><p>攀爬时可以执行跳跃、冲刺的行为。</p>
-<h2 id="3-6冲刺打断"><a href="#3-6冲刺打断" class="headerlink" title="3.6冲刺打断"></a>3.6冲刺打断</h2><p>在任何情况（地面、空中、墙上、有时正在进行冲刺时），只要有冲刺点，都可以优先判定进行一次冲刺。</p>
-<p>一旦输入冲刺，就会基本执行完这个动作，但可以在一个冲刺快结束（约5像素距离）时打断它进行下一个冲刺。玩家基本感受不到明显打断，这里和跳跃落地前的预输入异曲同工。</p>
-<h2 id="3-7冲刺补正"><a href="#3-7冲刺补正" class="headerlink" title="3.7冲刺补正"></a>3.7冲刺补正</h2><p>这是基于冲刺而出现的一个机制：观察残影可知，当冲刺遇到障碍时，如果障碍阻塞体积不大，可以自动补正为一个跨越障碍的冲刺。</p>
-<h2 id="3-8动量储存"><a href="#3-8动量储存" class="headerlink" title="3.8动量储存"></a>3.8动量储存</h2><p>起重机、云朵以及果冻墙都有一定的传动效果。</p>
-<h2 id="3-9-大跳、凌波微步"><a href="#3-9-大跳、凌波微步" class="headerlink" title="3.9 大跳、凌波微步"></a>3.9 大跳、凌波微步</h2><p>和起重机存储动能类似，Madeline也可以利用自身跑跳的惯性或者借力实现超长的跳跃。这类操作可以实现依赖于其动作帧数的“阶段”设计模式，在前文有提到。</p>
-<p>最常见的俯冲：跳起+向斜下方冲刺，然后迅速向右跳跃，</p>
-<p>利用高低地形还可以演变成超级Ultra Dash。</p>
+<h1 id="3-Extended-play"><a href="#3-Extended-play" class="headerlink" title="3. Extended play"></a>3. Extended play</h1><h1 id="3-1-Running-jump"><a href="#3-1-Running-jump" class="headerlink" title="3.1 Running jump"></a>3.1 Running jump</h1><p>By violently keying in frame-by-frame, the following graph, the curve of a maximal running jump, is obtained, with a smooth curve at a distance of about 5.5 body positions.</p>
+<h2 id="3-2-Jump-Pre-Input"><a href="#3-2-Jump-Pre-Input" class="headerlink" title="3.2 Jump Pre-Input"></a>3.2 Jump Pre-Input</h2><p>Jump pre-input realizes the seamlessness of the action, allowing the player to perform a continuous landing jump (usually accompanied by a large displacement of the x-axis), without strictly requiring the player to land on the ground, which ensures a coherent and smooth feel; with inclusiveness, the handicapped player can also experience the joy of the high-speed-moving .</p>
+<h2 id="3-3-Kick-Wall-Jump"><a href="#3-3-Kick-Wall-Jump" class="headerlink" title="3.3 Kick Wall Jump"></a>3.3 Kick Wall Jump</h2><p>This mechanic is scene dependent and does not need to be strictly against a wall (&lt;2 pixels is fine) to be inclusive. It creates a smooth, fluid, lightweight feel.</p>
+<h2 id="3-4-Wolf-Jump"><a href="#3-4-Wolf-Jump" class="headerlink" title="3.4 Wolf Jump"></a>3.4 Wolf Jump</h2><p>Wolf jumping refers to the ability to jump a few frames off the ground.</p>
+<p>Understandably, it is a mechanism designed to be inclusive of the player’s maneuvers, and this has spawned a higher upper limit of maneuvers for the speedpass player to utilize (even extending to being jumped on by a jab).</p>
+<h2 id="3-5-Climbing-behavior"><a href="#3-5-Climbing-behavior" class="headerlink" title="3.5 Climbing behavior"></a>3.5 Climbing behavior</h2><p>You can perform jumping and sprinting behaviors while climbing.</p>
+<h2 id="3-6-Sprint-Interrupt"><a href="#3-6-Sprint-Interrupt" class="headerlink" title="3.6 Sprint Interrupt"></a>3.6 Sprint Interrupt</h2><p>In any situation (on the ground, in the air, on a wall, and sometimes when a sprint is in progress), a sprint can be prioritized and judged to be performed as long as there is a sprint point.</p>
+<p>Once a sprint is input, it will essentially execute the move, but it is possible to interrupt a sprint near the end (~5 pixels away) to perform the next sprint. The player basically feels no noticeable interruption, and this is similar to the pre-input before a jump landing.</p>
+<h2 id="3-7-Sprint-Correction"><a href="#3-7-Sprint-Correction" class="headerlink" title="3.7 Sprint Correction"></a>3.7 Sprint Correction</h2><p>This is a mechanic based on sprinting: when a sprint encounters an obstacle, if the obstacle is not too large, it can be automatically corrected to a sprint across the obstacle.</p>
+<h2 id="3-8-Momentum-Storage"><a href="#3-8-Momentum-Storage" class="headerlink" title="3.8 Momentum Storage"></a>3.8 Momentum Storage</h2><p>Cranes, clouds, and walls of jelly all have some kind of drive effect.</p>
+<h2 id="3-9-Big-Jumps-Lingering-Steps"><a href="#3-9-Big-Jumps-Lingering-Steps" class="headerlink" title="3.9 Big Jumps, Lingering Steps"></a>3.9 Big Jumps, Lingering Steps</h2><p>Similar to the Crane’s momentum storage, Madeline can utilize the inertia of her running and jumping, or leverage the force of her jumps to achieve extra-long jumps. This type of maneuver can be implemented in a “stage” design pattern that depends on the frame rate of the maneuver, as mentioned in the previous section.</p>
+<p>The most common dive: jump + dash downward diagonally, then quickly jump to the right.</p>
+<p>It can also evolve into a Super Ultra Dash by utilizing high and low terrain.</p>
 <p><img src="/img/celeste/0020.png"></p>
 <br/>
 
-<h1 id="4-设计总结"><a href="#4-设计总结" class="headerlink" title="4.设计总结"></a>4.设计总结</h1><h2 id="4-1-设计理念"><a href="#4-1-设计理念" class="headerlink" title="4.1 设计理念"></a>4.1 设计理念</h2><h3 id="4-1-1连贯性设计"><a href="#4-1-1连贯性设计" class="headerlink" title="4.1.1连贯性设计"></a>4.1.1连贯性设计</h3><p>连贯性设计涉及到一些操作细节。在《蔚蓝》 中，这主要体现为跳跃的预输入（2像素）和 冲刺打断（5像素）。 特点：判定区间很小；在动作结束前判定； 马上连续执行下一个操作。 设计目的：连贯性设计很明显是为了保证游 戏的流畅度，以制造顺滑的手感。因为在像 素级游戏中，玩家基本不能准确抓住落地的 那一帧进行起跳，因此要实现连续的跳跃， 必须进行一个简短的预输入判定。冲刺没有 使用预输入而是直接打断，因为任何情况下 新的冲刺都是处于最高优先级的，必须保持 这个平衡。预输入/打断的判定时机相当短， 实际玩家体验难以觉察，保证了“角色依旧 在玩家掌控之中”，只是手感更连贯了。</p>
-<h3 id="4-1-2包容性设计和操作上限"><a href="#4-1-2包容性设计和操作上限" class="headerlink" title="4.1.2包容性设计和操作上限"></a>4.1.2包容性设计和操作上限</h3><p>包容性设计和连贯性设计类似，也属于对判定的一定程度的宽容。 连贯性设计强调动作衔接之间的连续，包容性设计强调单个动作 判定上的宽容。狼跳（10帧）、蹬墙跳（2像素）、冲刺补正都 属于包容性设计，这些设计事实上也带来了更高的操作上限。 特点：判定区间较小；在动作生效区间判定。 设计目的：增加判定区间同样帮助玩家更轻易地实现一个操作， 在保证手感连贯流畅的同时一并提升了操作的下限和上限。在更 进阶的技巧中，如超级蹬墙跳（向上冲刺蹬墙跳），蹬墙跳的判 定区间会更大（约5像素），这样的设计也在鼓励玩家尝试更精 准和严格的操作，提升自身的操作水平。</p>
-<h2 id="4-2-首要设计思路"><a href="#4-2-首要设计思路" class="headerlink" title="4.2 首要设计思路"></a>4.2 首要设计思路</h2><p>首要：作为一款关卡制平台跳跃游戏，《蔚蓝》在设计时最先要满足的是主要人物的移动操作没有问题， 手感（控制感、流畅度）较好，然后再在不同的关卡引入各具风味的辅助移动机制。 </p>
-<p>玩家导向：《蔚蓝》的移动机制主要针对了三大类人群—手残玩家，或只想体验故事的玩家（A类）； 对操作有追求，但技术一般的玩家（B类）；速通/多面的高级成就玩家（C类）。 </p>
-<p>对于A类和部分B类玩家，《蔚蓝》会是一个高难度游戏，设计时最优先考虑到的是：让整个移动机制简 洁易懂，提升操作的判定和下限。为此引入了较少的基本移动和包容性设计，跳跃、冲刺曲线的滞空时 间实际上也是便利玩家调整落点，降低操作门槛。（对AB类玩家的照顾还体现在死亡成本低这一特点上： 关卡简短，复活迅速等） </p>
-<p>对于C类玩家，制造操作上限是必不可少的，除了包容性设计的稍稍提升外，还要设计一套合理的，考 验操作的高阶玩法，这就引入了动能存储的组合机制（凌波微步，大跳，无体力上墙，反向跳墙等）， 这套动作组合给玩家提供了极高的操作上限，并且配套引入了高阶关卡。 对于B类玩家，设计师希望他们也能学会高阶操作。这就引入了高阶操作组合更大的判定宽容度，以及 在第九章中设计显式的高阶操作教学，使这些看似极限的操作更容易学习和实现。</p>
-<h2 id="4-3-关卡节奏导向"><a href="#4-3-关卡节奏导向" class="headerlink" title="4.3 关卡节奏导向"></a>4.3 关卡节奏导向</h2><p>关卡节奏导向：作为关卡制游戏，除了面向三类玩家设计一系列基本移动机制外，《蔚蓝》的移动机 制还必须服务于关卡的构建和节奏的把控。 </p>
-<p>在一个关卡中，玩家有时需要在空中进行连续的操作，也有时要在安全区停留下来以提供思考和缓冲 的时间。这反映在蔚蓝的基本移动机制设计上就是冲刺和攀爬。 </p>
-<p>为了创造在空中连续进行的流畅操作体验，就要同时从角色移动机制和关卡移动机制入手。首先需要 在关卡中引入一系列辅助玩家进行位移的道具（弹簧、起重机、云朵等），再结合角色设计出一套扩 充行动能力的机制，这就引入了冲刺和冲刺点的设计以及一系列补充冲刺点的可收集道具。这样，角 色的连续移动能力就和关卡设计挂钩了。 </p>
-<p>最后，玩家连续的移动需要有一个安全区进行有限时间缓冲，以控制关卡节奏跟随玩家的操作水平。 这就引入了攀爬机制（这里主要是指依附在墙体上），给移动制造短暂的停留。</p>
+<h1 id="4-Design-Summary"><a href="#4-Design-Summary" class="headerlink" title="4. Design Summary"></a>4. Design Summary</h1><h2 id="4-1-Design-Concept"><a href="#4-1-Design-Concept" class="headerlink" title="4.1 Design Concept"></a>4.1 Design Concept</h2><h2 id="4-1-1-Coherent-Design"><a href="#4-1-1-Coherent-Design" class="headerlink" title="4.1.1 Coherent Design"></a>4.1.1 Coherent Design</h2><p>Coherent design involves a number of operational details. In Celeste, this is mainly reflected in the jump pre-input (2 pixels) and dash interrupt (5 pixels). Characteristics: small decision intervals; decisions are made before the end of the action; the next action is performed immediately and continuously. Design Purpose: The coherence design is clearly intended to ensure the smoothness of the game, and to create a smooth feel in the hand. Because in pixel-level games, it is virtually impossible for the player to catch the exact frame of the landing to jump, a short pre-input decision is required to realize a continuous jump. Sprints are not pre-inputted, but rather interrupted, as the new sprint is the highest priority in any given situation, and this balance must be maintained. The timing of the pre-input/interrupt is so short that the actual player experience is hard to notice, ensuring that “the character is still in the player’s control”, but with a more consistent feel.</p>
+<h3 id="4-1-2-Inclusive-design-and-operational-caps"><a href="#4-1-2-Inclusive-design-and-operational-caps" class="headerlink" title="4.1.2 Inclusive design and operational caps"></a>4.1.2 Inclusive design and operational caps</h3><p>Inclusive design is similar to coherent design in that it allows a certain degree of latitude in judgment. Coherent design emphasizes the continuity of movement articulation, while inclusive design emphasizes the tolerance of individual movement judgments. Wolf Jump (10 frames), Wall Stomp (2 pixels), and Dash Compensation are all inclusive designs, and these designs in fact bring a higher upper limit. Characteristics: Smaller judgment interval; judgment is made during the effective interval of the action. Design Purpose: Increasing the judgment range also helps the player to realize an action more easily, and it raises the lower and upper limits of the action while keeping the feeling of consistency and smoothness. For more advanced techniques, such as the Super Wall Stomp (Upward Sprint Wall Stomp), the decision interval for the Wall Stomp will be larger (about 5 pixels), which encourages the player to attempt more precise and rigorous maneuvers to improve their skill level.</p>
+<h2 id="4-2-Primary-Design-Ideas"><a href="#4-2-Primary-Design-Ideas" class="headerlink" title="4.2 Primary Design Ideas"></a>4.2 Primary Design Ideas</h2><p>Priority: As a level-based platform jumping game, Celeste is designed so that the main characters can move without any problems, and the feel of the game (control and smoothness) is good, and then it introduces a variety of auxiliary movement mechanisms in different levels with different flavors. </p>
+<p>Player Orientation: The movement mechanism of Celeste is mainly targeted at three categories of people - handicapped players, or players who just want to experience the story (Class A); players who have the pursuit of operation, but with average skills (Class B); and players who have advanced achievements in speed pass/multi-faceted (Class C). </p>
+<p>For Class A and some Class B players, Celeste will be a difficult game, and the highest priority in the design was to make the entire movement mechanics simple and easy to understand, and to improve the judgment and lower limit of the operation. For this reason, less basic movement and inclusive design is introduced, and the lag time of jumping and sprinting curves actually facilitates players to adjust their landing points and lower the threshold of operation. (The care for AB players is also reflected in the low cost of death: short levels, quick resurrection, etc.) </p>
+<p>For class C players, it is indispensable to create an operation ceiling, in addition to the slightly increased inclusiveness design, it is also necessary to design a reasonable set of high-level gameplay to test the operation, which introduces the combination mechanism of kinetic energy storage (High-speed-moving, big jump, no stamina on the wall, reverse jumping, etc.), this set of action combinations to provide the player with a very high operation ceiling, and supporting the introduction of high-level levels. For B players, the designers wanted them to be able to learn advanced maneuvers as well. This introduced a greater degree of judgment latitude for higher-level maneuvers, as well as explicit teaching of higher-level maneuvers in Chapter 9 to make these seemingly extreme maneuvers easier to learn and implement.</p>
+<h2 id="4-3-Level-Pace-Oriented"><a href="#4-3-Level-Pace-Oriented" class="headerlink" title="4.3 Level Pace Oriented"></a>4.3 Level Pace Oriented</h2><p>Rhythm-oriented: As a level-based game, in addition to designing a series of basic movement mechanics for the three types of players, Celeste’s movement mechanics must also serve the construction of the level and control the rhythm. </p>
+<p>In a level, players will sometimes need to perform continuous maneuvers in the air, and at other times they will need to stop in safe zones to provide time for reflection and buffering. This is reflected in Celeste’s basic movement mechanics of sprinting and climbing. </p>
+<p>In order to create a smooth experience of continuous maneuvering in the air, it was necessary to start with both character movement mechanics and level movement mechanics. The first step is to introduce a series of props (springs, cranes, clouds, etc.) to assist the player’s displacement in the level, and then design a mechanism for expanding the character’s mobility, which introduces the design of sprinting and sprinting points, as well as a series of collectible props to replenish sprinting points. In this way, the character’s ability to move continuously is linked to the level design. </p>
+<p>Finally, the player’s continuous movement needs to be buffered by a safety zone for a limited time in order to control the pacing of the level to follow the player’s maneuvering level. This introduces a climbing mechanic (in this case, clinging to walls) that creates a brief lull in movement.</p>
 <br/>
 
       </section>
@@ -234,12 +234,12 @@
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="/img/00.jpg"></div>
+      <div class="card-cover" background-image-lazy data-img="/img/02.jpg"></div>
     
     <div class="card-text">
       
-        <a href="/2021/10/27/%E6%B8%B8%E4%BA%BA01-%E4%BB%BB%E5%A4%A9%E5%A0%82%E6%98%8E%E6%98%9F%E5%A4%A7%E4%B9%B1%E6%96%97%E5%8D%9A%E5%BC%88%E6%8B%86%E8%A7%A3/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">游人01-任天堂明星大乱斗博弈拆解</h2>
+        <a href="/2021/10/26/Hello-Guys/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">Hello Guys！</h2>
         </a>
       
       <div class="card-text--row">Older</div>
@@ -281,7 +281,7 @@
         <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
 </svg>
-        <span>9</span>
+        <span>8</span>
       </div>
       <div class="count-box--item">
         <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -293,7 +293,7 @@
         <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
 </svg>
-        13
+        11
       </div>
     </div>
   </div>
@@ -308,7 +308,7 @@
     <span>TOC</span>
   </div>
   <div class="widget-body">
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">1.1资源管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2%E5%8C%85%E5%AE%B9%E6%80%A7"><span class="toc-number">2.</span> <span class="toc-text">1.2包容性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-%E5%85%B3%E5%8D%A1%E8%8A%82%E5%A5%8F%E4%BC%98%E7%A7%80"><span class="toc-number">3.</span> <span class="toc-text">1.3 关卡节奏优秀</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E8%A7%92%E8%89%B2%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%88%B6"><span class="toc-number">4.</span> <span class="toc-text">2.1 角色移动机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2%E5%8A%A8%E4%BD%9C%E5%B8%A7%E6%95%B0%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F"><span class="toc-number">5.</span> <span class="toc-text">2.2动作帧数设计模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1%E8%B7%91%E8%B7%B3"><span class="toc-number">6.</span> <span class="toc-text">3.1跑跳</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E9%A2%84%E8%BE%93%E5%85%A5%E8%B7%B3%E8%B7%83"><span class="toc-number">7.</span> <span class="toc-text">3.2 预输入跳跃</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-%E8%B9%AC%E5%A2%99%E8%B7%B3"><span class="toc-number">8.</span> <span class="toc-text">3.3 蹬墙跳</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-%E7%8B%BC%E8%B7%B3"><span class="toc-number">9.</span> <span class="toc-text">3.4 狼跳</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5-%E6%94%80%E7%88%AC%E8%A1%8C%E4%B8%BA"><span class="toc-number">10.</span> <span class="toc-text">3.5 攀爬行为</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-6%E5%86%B2%E5%88%BA%E6%89%93%E6%96%AD"><span class="toc-number">11.</span> <span class="toc-text">3.6冲刺打断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-7%E5%86%B2%E5%88%BA%E8%A1%A5%E6%AD%A3"><span class="toc-number">12.</span> <span class="toc-text">3.7冲刺补正</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-8%E5%8A%A8%E9%87%8F%E5%82%A8%E5%AD%98"><span class="toc-number">13.</span> <span class="toc-text">3.8动量储存</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-9-%E5%A4%A7%E8%B7%B3%E3%80%81%E5%87%8C%E6%B3%A2%E5%BE%AE%E6%AD%A5"><span class="toc-number">14.</span> <span class="toc-text">3.9 大跳、凌波微步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-%E8%AE%BE%E8%AE%A1%E7%90%86%E5%BF%B5"><span class="toc-number">15.</span> <span class="toc-text">4.1 设计理念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-1%E8%BF%9E%E8%B4%AF%E6%80%A7%E8%AE%BE%E8%AE%A1"><span class="toc-number">15.1.</span> <span class="toc-text">4.1.1连贯性设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-2%E5%8C%85%E5%AE%B9%E6%80%A7%E8%AE%BE%E8%AE%A1%E5%92%8C%E6%93%8D%E4%BD%9C%E4%B8%8A%E9%99%90"><span class="toc-number">15.2.</span> <span class="toc-text">4.1.2包容性设计和操作上限</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-%E9%A6%96%E8%A6%81%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF"><span class="toc-number">16.</span> <span class="toc-text">4.2 首要设计思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3-%E5%85%B3%E5%8D%A1%E8%8A%82%E5%A5%8F%E5%AF%BC%E5%90%91"><span class="toc-number">17.</span> <span class="toc-text">4.3 关卡节奏导向</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-Resource-Management"><span class="toc-number">1.</span> <span class="toc-text">1.1 Resource Management</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-Inclusivity"><span class="toc-number">2.</span> <span class="toc-text">1.2 Inclusivity</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-Excellent-level-pacing"><span class="toc-number">3.</span> <span class="toc-text">1.3 Excellent level pacing</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-Character-movement-mechanism"><span class="toc-number">4.</span> <span class="toc-text">2.1 Character movement mechanism</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2Motion-Frames-Design-Pattern"><span class="toc-number">5.</span> <span class="toc-text">2.2Motion Frames Design Pattern</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-Jump-Pre-Input"><span class="toc-number">6.</span> <span class="toc-text">3.2 Jump Pre-Input</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-Kick-Wall-Jump"><span class="toc-number">7.</span> <span class="toc-text">3.3 Kick Wall Jump</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-Wolf-Jump"><span class="toc-number">8.</span> <span class="toc-text">3.4 Wolf Jump</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5-Climbing-behavior"><span class="toc-number">9.</span> <span class="toc-text">3.5 Climbing behavior</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-6-Sprint-Interrupt"><span class="toc-number">10.</span> <span class="toc-text">3.6 Sprint Interrupt</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-7-Sprint-Correction"><span class="toc-number">11.</span> <span class="toc-text">3.7 Sprint Correction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-8-Momentum-Storage"><span class="toc-number">12.</span> <span class="toc-text">3.8 Momentum Storage</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-9-Big-Jumps-Lingering-Steps"><span class="toc-number">13.</span> <span class="toc-text">3.9 Big Jumps, Lingering Steps</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-Design-Concept"><span class="toc-number">14.</span> <span class="toc-text">4.1 Design Concept</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-1-Coherent-Design"><span class="toc-number">15.</span> <span class="toc-text">4.1.1 Coherent Design</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-2-Inclusive-design-and-operational-caps"><span class="toc-number">15.1.</span> <span class="toc-text">4.1.2 Inclusive design and operational caps</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-Primary-Design-Ideas"><span class="toc-number">16.</span> <span class="toc-text">4.2 Primary Design Ideas</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3-Level-Pace-Oriented"><span class="toc-number">17.</span> <span class="toc-text">4.3 Level Pace Oriented</span></a></li></ol>
   </div>
 </section>
 
@@ -339,7 +339,7 @@
       
         <li class="categorys-list-item">
           <a href="/categories/%E6%B8%B8%E4%BA%BA/">
-            游人 (8)
+            游人 (7)
           </a>
         </li>
       
@@ -356,7 +356,7 @@
   </div>
   <div class="widget-body">
     <div class="tags-cloud">
-      <a href="/tags/ACT/" style="font-size: 10px;" class="tags-cloud-0">ACT</a> <a href="/tags/Metroidvania/" style="font-size: 10px;" class="tags-cloud-0">Metroidvania</a> <a href="/tags/brandon/" style="font-size: 10px;" class="tags-cloud-0">brandon</a> <a href="/tags/%E5%88%86%E4%BA%AB/" style="font-size: 10px;" class="tags-cloud-0">分享</a> <a href="/tags/%E5%8D%81%E6%9C%88/" style="font-size: 16.67px;" class="tags-cloud-7">十月</a> <a href="/tags/%E5%B9%B3%E5%8F%B0%E8%B7%B3%E8%B7%83/" style="font-size: 13.33px;" class="tags-cloud-3">平台跳跃</a> <a href="/tags/%E5%BD%B1%E8%AF%84/" style="font-size: 10px;" class="tags-cloud-0">影评</a> <a href="/tags/%E6%8B%86%E8%A7%A3/" style="font-size: 13.33px;" class="tags-cloud-3">拆解</a> <a href="/tags/%E6%96%87%E6%A1%88/" style="font-size: 10px;" class="tags-cloud-0">文案</a> <a href="/tags/%E6%9C%88%E7%82%B8/" style="font-size: 20px;" class="tags-cloud-10">月炸</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 16.67px;" class="tags-cloud-7">杂谈</a> <a href="/tags/%E7%B3%BB%E7%BB%9F/" style="font-size: 10px;" class="tags-cloud-0">系统</a> <a href="/tags/%E9%AD%82%E7%B1%BB/" style="font-size: 10px;" class="tags-cloud-0">魂类</a>
+      <a href="/tags/Metroidvania/" style="font-size: 10px;" class="tags-cloud-0">Metroidvania</a> <a href="/tags/%E5%88%86%E4%BA%AB/" style="font-size: 10px;" class="tags-cloud-0">分享</a> <a href="/tags/%E5%8D%81%E6%9C%88/" style="font-size: 16.67px;" class="tags-cloud-7">十月</a> <a href="/tags/%E5%B9%B3%E5%8F%B0%E8%B7%B3%E8%B7%83/" style="font-size: 13.33px;" class="tags-cloud-3">平台跳跃</a> <a href="/tags/%E5%BD%B1%E8%AF%84/" style="font-size: 10px;" class="tags-cloud-0">影评</a> <a href="/tags/%E6%8B%86%E8%A7%A3/" style="font-size: 10px;" class="tags-cloud-0">拆解</a> <a href="/tags/%E6%96%87%E6%A1%88/" style="font-size: 10px;" class="tags-cloud-0">文案</a> <a href="/tags/%E6%9C%88%E7%82%B8/" style="font-size: 20px;" class="tags-cloud-10">月炸</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 16.67px;" class="tags-cloud-7">杂谈</a> <a href="/tags/%E7%B3%BB%E7%BB%9F/" style="font-size: 10px;" class="tags-cloud-0">系统</a> <a href="/tags/%E9%AD%82%E7%B1%BB/" style="font-size: 10px;" class="tags-cloud-0">魂类</a>
     </div>
   </div>
 </section>
@@ -394,7 +394,7 @@
       
     </div>
      
-    <p>&copy; 2022 <a href="/" target="_blank">HuaGong-Explorer</a></p>
+    <p>&copy; 2023 <a href="/" target="_blank">Game-Explorer</a></p>
 
     
 
